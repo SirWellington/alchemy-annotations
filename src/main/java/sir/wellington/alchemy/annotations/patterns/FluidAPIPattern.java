@@ -13,26 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
-package sir.wellington.commons.annotations.arguments;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
-import java.util.Collection;
 
 /**
- * Specifies that the argument or field CANNOT be {@code null} or empty. This applies to
- * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
+ * Used to document the application or use of the Fluid API Style, explained
+ * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
  *
+ * @see
+ * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
-public @interface NonEmpty 
+@Target(TYPE)
+public @interface FluidAPIPattern
 {
 
 }

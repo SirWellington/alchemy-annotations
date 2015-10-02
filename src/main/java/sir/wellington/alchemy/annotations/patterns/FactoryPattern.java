@@ -13,26 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Abstract Factory Pattern, explained
- * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
+ * Use to document the application and use of the Factory Pattern.
  *
  * @see
- * <a href="http://www.oodesign.com/abstract-factory-pattern.html">http://www.oodesign.com/abstract-factory-pattern.html</a>
- * @see
- * <a href="https://sourcemaking.com/design_patterns/abstract_factory">https://sourcemaking.com/design_patterns/abstract_factory</a>
+ * <a href="http://www.oodesign.com/factory-pattern.html">http://www.oodesign.com/factory-pattern.html</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface AbstractFactoryPattern
+public @interface FactoryPattern
 {
 
     Role role();
@@ -41,23 +38,19 @@ public @interface AbstractFactoryPattern
     {
 
         /**
-         * Applied to the Interface of the Factory, i.e. the Abstract Factory.
-         */
-        FACTORY,
-        /**
-         * Applied to a concrete implementation of the Factory.
-         */
-        CONCRETE_FACTORY,
-        /**
          * Applied to the Interface of the Product, i.e. the Abstract Product.
          */
         PRODUCT,
         /**
-         * Applied to a concrete Product.
+         * Applied to a Concrete Product that implements the Product interface.
          */
         CONCRETE_PRODUCT,
         /**
-         * Applied to an Object or class which makes use of this pattern.
+         * Applied to the Factory Class. It's responsible for creating concrete products.
+         */
+        FACTORY,
+        /**
+         * Applied to a Class or Object that uses the Factory Pattern.Ï
          */
         CLIENT
     }

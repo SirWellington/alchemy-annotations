@@ -13,7 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
+package sir.wellington.alchemy.annotations.arguments;
+
+import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.PARAMETER;
+import java.lang.annotation.Target;
+
 /**
- * Annotations for documenting expectations about arguments and fields.
+ * Specifies that {@code null} is an acceptable value for the argument or field.
+ *
+ * @author SirWellington
  */
-package sir.wellington.commons.annotations.arguments;
+@Documented
+@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
+public @interface Nullable 
+{
+
+}

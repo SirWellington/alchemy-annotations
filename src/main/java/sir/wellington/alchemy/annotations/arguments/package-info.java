@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 /**
- * Annotations that document the application and use of Design Patterns.
+ * Annotations for documenting expectations about arguments and fields.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.arguments;

@@ -13,24 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Strategy Pattern, explained
- * <a href="http://www.oodesign.com/strategy-pattern.html">here</a>.
+ * Used to document the application and use of the Observer Pattern.
  *
  * @see
- * <a href="http://www.oodesign.com/strategy-pattern.html">http://www.oodesign.com/strategy-pattern.html</a>
+ * <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface StrategyPattern
+public @interface ObserverPattern
 {
 
     Role role();
@@ -39,17 +38,22 @@ public @interface StrategyPattern
     {
 
         /**
-         * Applied to the Interface definition of the Behavior.
+         * Applied to the Object being observed by others. This is also known as the "Topic".
          */
-        INTERFACE,
+        SUBJECT,
         /**
-         * Applied to a concrete implementation of the Behavior Interface.
+         * Applied to the Interface of the Observer interested in observing the Subject. This is
+         * also known as a Listener, or Subscriber.
          */
-        CONCRETE_BEHAVIOR,
+        OBSERVER,
         /**
-         * Applied to an Object that knowingly uses the Strategy Pattern to delegate some of its
-         * behavior.
+         * Applied to an Object that implements the Observer interface, i.e. a Concrete Observer.Ï
          */
-        CLIENT
+        CONCRETE_OBSERVER,
+        /**
+         * In some implementations, there is a broker between the Subject and its observers that
+         * manage state and connections.
+         */
+        BROKER
     }
 }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.concurrency;
+package sir.wellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.CONSTRUCTOR;

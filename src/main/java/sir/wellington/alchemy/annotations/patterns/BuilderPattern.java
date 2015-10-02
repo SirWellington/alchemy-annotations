@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Observer Pattern.
+ * Used to document the application and use of the Builder Pattern.
  *
  * @see
- * <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
+ * <a href="http://www.oodesign.com/builder-pattern.html">http://www.oodesign.com/builder-pattern.html</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface ObserverPattern
+public @interface BuilderPattern
 {
 
     Role role();
@@ -38,22 +38,22 @@ public @interface ObserverPattern
     {
 
         /**
-         * Applied to the Object being observed by others. This is also known as the "Topic".
+         * Applied to the Builder, responsible for configuring and creating the product, for the
+         * Client.
          */
-        SUBJECT,
+        BUILDER,
         /**
-         * Applied to the Interface of the Observer interested in observing the Subject. This is
-         * also known as a Listener, or Subscriber.
+         * (optional) Applied to a concrete Builder. In some application of this pattern, the
+         * Builder is an interface, and implementations are captured separately.
          */
-        OBSERVER,
+        CONCRETE_BUILDER,
         /**
-         * Applied to an Object that implements the Observer interface, i.e. a Concrete Observer.Ï
+         * Applied to an Object that is created by the Builder.
          */
-        CONCRETE_OBSERVER,
+        PRODUCT,
         /**
-         * In some implementations, there is a broker between the Subject and its observers that
-         * manage state and connections.
+         * Applied to an Object or Class that knowingly uses the Builder Pattern.
          */
-        BROKER
+        CLIENT
     }
 }

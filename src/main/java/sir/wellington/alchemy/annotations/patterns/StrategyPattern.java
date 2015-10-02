@@ -13,23 +13,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application or use of the Fluid API Style, explained
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
+ * Used to document the application and use of the Strategy Pattern, explained
+ * <a href="http://www.oodesign.com/strategy-pattern.html">here</a>.
  *
  * @see
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
+ * <a href="http://www.oodesign.com/strategy-pattern.html">http://www.oodesign.com/strategy-pattern.html</a>
+ *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface FluidAPIPattern
+public @interface StrategyPattern
 {
 
+    Role role();
+
+    public static enum Role
+    {
+
+        /**
+         * Applied to the Interface definition of the Behavior.
+         */
+        INTERFACE,
+        /**
+         * Applied to a concrete implementation of the Behavior Interface.
+         */
+        CONCRETE_BEHAVIOR,
+        /**
+         * Applied to an Object that knowingly uses the Strategy Pattern to delegate some of its
+         * behavior.
+         */
+        CLIENT
+    }
 }

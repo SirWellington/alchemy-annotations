@@ -16,4 +16,4 @@
 /**
  * Annotations documenting concepts and issues relating to Concurrency.
  */
-package sir.wellington.commons.annotations.concurrency;
+package sir.wellington.alchemy.annotations.concurrency;

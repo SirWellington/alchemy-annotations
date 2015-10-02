@@ -13,23 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+package sir.wellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Builder Pattern.
+ * Used to document the application and use of the Abstract Factory Pattern, explained
+ * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
  *
  * @see
- * <a href="http://www.oodesign.com/builder-pattern.html">http://www.oodesign.com/builder-pattern.html</a>
+ * <a href="http://www.oodesign.com/abstract-factory-pattern.html">http://www.oodesign.com/abstract-factory-pattern.html</a>
+ * @see
+ * <a href="https://sourcemaking.com/design_patterns/abstract_factory">https://sourcemaking.com/design_patterns/abstract_factory</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface BuilderPattern
+public @interface AbstractFactoryPattern
 {
 
     Role role();
@@ -38,21 +41,23 @@ public @interface BuilderPattern
     {
 
         /**
-         * Applied to the Builder, responsible for configuring and creating the product, for the
-         * Client.
+         * Applied to the Interface of the Factory, i.e. the Abstract Factory.
          */
-        BUILDER,
+        FACTORY,
         /**
-         * (optional) Applied to a concrete Builder. In some application of this pattern, the
-         * Builder is an interface, and implementations are captured separately.
+         * Applied to a concrete implementation of the Factory.
          */
-        CONCRETE_BUILDER,
+        CONCRETE_FACTORY,
         /**
-         * Applied to an Object that is created by the Builder.
+         * Applied to the Interface of the Product, i.e. the Abstract Product.
          */
         PRODUCT,
         /**
-         * Applied to an Object or Class that knowingly uses the Builder Pattern.
+         * Applied to a concrete Product.
+         */
+        CONCRETE_PRODUCT,
+        /**
+         * Applied to an Object or class which makes use of this pattern.
          */
         CLIENT
     }

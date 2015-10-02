@@ -13,23 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.commons.annotations.patterns;
+
+
+package sir.wellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.PARAMETER;
 import java.lang.annotation.Target;
+import java.util.Collection;
 
 /**
- * Apply to Classes that apply the Singleton Design Pattern.
- *
- * @see
- * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ * Specifies that the argument or field CANNOT be {@code null} or empty. This applies to
+ * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
  *
  * @author SirWellington
  */
 @Documented
-@Target(TYPE)
-public @interface SingletonPattern
+@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
+public @interface NonEmpty 
 {
 
 }
