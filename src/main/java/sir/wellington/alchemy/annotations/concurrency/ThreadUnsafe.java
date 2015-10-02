@@ -28,6 +28,8 @@ import java.lang.annotation.Target;
  * immutable or handle synchronization internally can be marked as {@link ThreadSafe}.
  *
  * @see ThreadUnsafe
+ * @see Mutable
+ * 
  * @author SirWellington
  */
 @Documented
