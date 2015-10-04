@@ -15,23 +15,24 @@
  */
 
 
-package sir.wellington.alchemy.annotations.arguments;
+package sir.wellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Specifies that {@code null} is an acceptable value for the argument or field.
+ * Used to tag a section of code as intended for internal use only. Clients should not try to use
+ * classes or functions tagged as {@link Internal}.
  *
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface Nullable 
+@Target({TYPE, PARAMETER, FIELD, LOCAL_VARIABLE})
+public @interface Internal 
 {
 
 }

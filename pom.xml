@@ -9,8 +9,8 @@
     <name>${project.artifactId}</name>
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
-        Contains annotations that allow clearer documentation of intent of your code.
         Part of the Alchemy collection.
+        Contains annotations that allow clearer documentation of intent of your code.
     </description>
     
     <packaging>jar</packaging>
