@@ -15,22 +15,27 @@
  */
 
 
-package sir.wellington.commons.annotations.arguments;
+package sir.wellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
+
 /**
- * Specifies that {@code null} is an acceptable value for the argument or field.
+ * Used to indicate that a variable or class is not designed to be immutable. That is, its
+ * underlying can be changed once set.
  *
+ * @see Immutable
+ * 
  * @author SirWellington
  */
+
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
-public @interface Nullable 
+@Target({ TYPE, FIELD, LOCAL_VARIABLE})
+public @interface Mutable
 {
 
 }

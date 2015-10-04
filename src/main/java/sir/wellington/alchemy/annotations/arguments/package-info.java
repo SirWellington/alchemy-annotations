@@ -16,4 +16,4 @@
 /**
  * Annotations for documenting expectations about arguments and fields.
  */
-package sir.wellington.commons.annotations.arguments;
+package sir.wellington.alchemy.annotations.arguments;
