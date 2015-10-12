@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Wellington.
+ * Copyright 2015 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
 package sir.wellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
@@ -27,13 +25,16 @@ import java.lang.annotation.Target;
 
 /**
  * Used to tag a section of code as intended for internal use only. Clients should not try to use
- * classes or functions tagged as {@link Internal}.
+ * classes or functions tagged as {@link Internal} to the Project.
  *
  * @author SirWellington
  */
 @Documented
-@Target({TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface Internal 
+@Target(
+{
+    TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD
+})
+public @interface Internal
 {
 
 }

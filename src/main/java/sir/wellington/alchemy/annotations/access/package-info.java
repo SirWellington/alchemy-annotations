@@ -13,25 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.concurrency;
-
-import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.TYPE;
-import java.lang.annotation.Target;
-
 /**
- * Used to indicate that a variable or class is designed to be immutable. Once it is created and
- * set, it's underlying state cannot be changed.
- *
- * @see Mutable
- * 
- * @author SirWellington
+ * Annotations for documenting expectations about access to data or functionality.
  */
-@Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
-public @interface Immutable
-{
-
-}
+package sir.wellington.alchemy.annotations.access;
