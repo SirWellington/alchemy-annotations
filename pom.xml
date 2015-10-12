@@ -5,7 +5,8 @@
     <groupId>sir.wellington.alchemy</groupId>
     <artifactId>alchemy-annotations</artifactId>
     <version>1.1-SNAPSHOT</version>
-    
+    <packaging>jar</packaging>
+
     <name>${project.artifactId}</name>
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
@@ -13,7 +14,11 @@
         Contains annotations that allow clearer documentation of intent of your code.
     </description>
     
-    <packaging>jar</packaging>
+    
+    <organization>
+        <name>Sir Wellington</name>
+        <url>https://github.com/SirWellington</url>
+    </organization>
     
     <developers>
         <developer>
