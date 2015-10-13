@@ -860,4 +860,217 @@ body .markdown-body
   float: left;
   margin: 0.3em 0 0.25em -1.6em;
   vertical-align: middle;
-}</style><title>README</title></head><body><article class="markdown-body"></article></body></html>
+}</style><title>README</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-documentation-annotations" class="anchor" href="#documentation-annotations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation Annotations</h1>
+
+<p><a href="https://travis-ci.org/SirWellington/alchemy-annotations"><img src="https://camo.githubusercontent.com/461445bcb7d94c5cb83c70bb5ad21333ba906015/68747470733a2f2f7472617669732d63692e6f72672f53697257656c6c696e67746f6e2f616c6368656d792d616e6e6f746174696f6e732e737667" alt="Build Status" data-canonical-src="https://travis-ci.org/SirWellington/alchemy-annotations.svg" style="max-width:100%;"></a></p>
+
+<h1>
+<a id="user-content-purpose" class="anchor" href="#purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose</h1>
+
+<p>Contains annotations which allow Java Developers to more clearly document code. 
+It can be used to document intent, expectations, behaviors, structure, and more.</p>
+
+<h1>
+<a id="user-content-why-use-this" class="anchor" href="#why-use-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why use this</h1>
+
+<p>It makes it much easier for other developers and architects to understand what is going on in the code base.
+It also allows us to more explicitly document intent and expectations, reducing the chance for human mistake.</p>
+
+<p>For example, by applying the <code>@StrategyPattern</code> annotation to a few classes, we know exactly what relation is intended between
+the classes.</p>
+
+<h1>
+<a id="user-content-requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h1>
+
+<ul>
+<li>JDK 8</li>
+<li>Maven</li>
+</ul>
+
+<h1>
+<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>This Software is licensed under the Apache 2.0 License</p>
+
+<h1>
+<a id="user-content-building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h1>
+
+<p>This project builds with maven. Just run a <code>mvn clean install</code> to compile and install to your local maven repository</p>
+
+<h1>
+<a id="user-content-download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h1>
+
+<blockquote>
+<p>This library is not yet available on Maven Central</p>
+</blockquote>
+
+<p>To use, simply add the following maven dependency.</p>
+
+<h2>
+<a id="user-content-release" class="anchor" href="#release" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release</h2>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;sir.wellington.alchemy&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">artifactId</span>&gt;alchemy-annotations&lt;/<span class="pl-ent">artifactId</span>&gt;
+    &lt;<span class="pl-ent">version</span>&gt;1.0&lt;/<span class="pl-ent">version</span>&gt;
+&lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
+
+<h2>
+<a id="user-content-jitpack" class="anchor" href="#jitpack" aria-hidden="true"><span class="octicon octicon-link"></span></a>JitPack</h2>
+
+<p>You can also use <a href="https://jitpack.io/#SirWellington/alchemy-annotations/v1.0.0">JitPack.io</a>.</p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">repository</span>&gt;
+    &lt;<span class="pl-ent">id</span>&gt;jitpack.io&lt;/<span class="pl-ent">id</span>&gt;
+    &lt;<span class="pl-ent">url</span>&gt;https://jitpack.io&lt;/<span class="pl-ent">url</span>&gt;
+&lt;/<span class="pl-ent">repository</span>&gt;</pre></div>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;com.github.SirWellington&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">artifactId</span>&gt;alchemy-annotations&lt;/<span class="pl-ent">artifactId</span>&gt;
+    &lt;<span class="pl-ent">version</span>&gt;v1.0.0&lt;/<span class="pl-ent">version</span>&gt;
+&lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
+
+<h1>
+<a id="user-content-api" class="anchor" href="#api" aria-hidden="true"><span class="octicon octicon-link"></span></a>API</h1>
+
+<p>Applying anotations is simple.</p>
+
+<h2>
+<a id="user-content-arguments" class="anchor" href="#arguments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arguments</h2>
+
+<p>Documentation for arguments or fields.</p>
+
+<ul>
+<li>
+<code>@Nullable</code> - Indicates that a parameter or field can be <code>null</code>. I.E., <code>null</code> is an acceptable value.</li>
+<li>
+<code>@NonNull</code> - Indicates that a parameter or field that should never be <code>null</code>. I.E., it's an error condition if it is <code>null</code>.</li>
+<li>
+<code>@NonEmpty</code> - Indicates that <code>String</code>, <code>Array</code>, <code>Collection</code>, or similar type should never be empty. </li>
+</ul>
+
+<h3>
+<a id="user-content-examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">class</span> <span class="pl-en">MyService</span>
+{   
+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> name;
+
+    <span class="pl-en">MyService</span>(<span class="pl-k">@NonEmpty</span> <span class="pl-smi">String</span> <span class="pl-v">serviceName</span>)
+    {
+        <span class="pl-smi">Arguments</span><span class="pl-k">.</span>checkThat(serviceName)
+                 .is(nonEmptyString());
+        <span class="pl-v">this</span><span class="pl-k">.</span>name <span class="pl-k">=</span> serviceName;
+    }
+}
+</pre></div>
+
+<div class="highlight highlight-source-java"><pre>
+<span class="pl-k">public</span> <span class="pl-smi">Pizza</span> create(<span class="pl-smi">Bread</span> bread, @<span class="pl-smi">Nullable</span> <span class="pl-k">List&lt;<span class="pl-smi">Condiments</span>&gt;</span> condiments)
+{
+    <span class="pl-smi">Pizza</span> pizza <span class="pl-k">=</span> createPizza(bread);
+
+    <span class="pl-k">if</span> (<span class="pl-smi">Lists</span><span class="pl-k">.</span>notEmpty(condiments))
+    {
+        pizza<span class="pl-k">.</span>addCondiments(condiments);
+    }
+}
+</pre></div>
+
+<h2>
+<a id="user-content-concurrency" class="anchor" href="#concurrency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concurrency</h2>
+
+<p>Documentation for Concurrency concerns and concepts.</p>
+
+<ul>
+<li>
+<code>@ThreadSafe</code> - Indicates that an Object or method is Thread-Safe and can be used in multi-threaded environments without additional precautions.</li>
+<li>
+<code>@ThreadUnsafe</code> - Opposite of <code>@ThreadSafe</code>. Used to indicate that an object is definitely not Thread-Safe and should be handled cautiously in multi-threaded environments.</li>
+</ul>
+
+<h3>
+<a id="user-content-examples-1" class="anchor" href="#examples-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+
+<div class="highlight highlight-source-java"><pre>
+@<span class="pl-smi">ThreadUnsafe</span>
+<span class="pl-k">class</span> <span class="pl-en">PizzaFactory</span>
+{
+    <span class="pl-smi">Pizza</span> <span class="pl-en">makePizza</span>()
+    {
+        <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-smi">Pizza</span>(<span class="pl-s"><span class="pl-pds">"</span>Tasty!<span class="pl-pds">"</span></span>);
+    }
+}   
+
+<span class="pl-k">class</span> <span class="pl-en">PizzaStore</span>
+{
+    <span class="pl-c">//Can also be used on variables</span>
+    <span class="pl-k">@ThreadUnsafe</span>
+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">PizzaFactory</span> factory;
+
+    <span class="pl-c1">...</span>
+
+    <span class="pl-k">void</span> <span class="pl-en">serveCustomer</span>()
+    {   
+        <span class="pl-c">//Handle synchronization</span>
+        <span class="pl-k">synchronized</span> (factory) 
+        {
+            <span class="pl-smi">Pizza</span> pizza <span class="pl-k">=</span> factory<span class="pl-k">.</span>makePizza();
+            <span class="pl-c1">...</span>
+        }
+    }
+}</pre></div>
+
+<h2>
+<a id="user-content-design-patterns" class="anchor" href="#design-patterns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Patterns</h2>
+
+<p>Documents the Application or Use of Design Patterns. This allows others to know right away how objects relate.</p>
+
+<ul>
+<li><code>@BuilderPattern</code></li>
+<li><code>@FactoryPattern</code></li>
+<li><code>@AbstractFactoryPattern</code></li>
+<li><code>@StrategyPattern</code></li>
+<li><code>@DecoratorPattern</code></li>
+<li><code>@FluidAPIPattern</code></li>
+<li><code>@SingletonPattern</code></li>
+<li><code>@ObserverPattern</code></li>
+<li><code>@FluidAPIPattern</code></li>
+</ul>
+
+<p>Some of these patterns require you to also document the role of each object in the pattern. 
+For example, the Observer Pattern:</p>
+
+<div class="highlight highlight-source-java"><pre>
+@ObserverPattern(<span class="pl-c1">SUBJECT</span>)
+<span class="pl-k">class</span> <span class="pl-en">Apple</span> 
+{
+<span class="pl-c1">...</span>
+}
+
+@ObserverPattern(<span class="pl-c1">OBSERVER</span>)
+<span class="pl-k">class</span> <span class="pl-en">AppleFanboy</span> <span class="pl-k">implements</span> <span class="pl-e">AppleWatcher</span>
+{
+
+    <span class="pl-k">void</span> <span class="pl-en">onNewRelease</span>(<span class="pl-smi">PressRelease</span> <span class="pl-v">info</span>)
+    {
+        print(<span class="pl-s"><span class="pl-pds">"</span>WooHoo!<span class="pl-pds">"</span></span>);
+    }
+}
+</pre></div>
+
+<h1>
+<a id="user-content-release-notes" class="anchor" href="#release-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Notes</h1>
+
+<h2>
+<a id="user-content-11" class="anchor" href="#11" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1</h2>
+
+<h2>
+<a id="user-content-100" class="anchor" href="#100" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.0.0</h2>
+
+<ul>
+<li>Initial Release</li>
+</ul>
+</article></body></html>

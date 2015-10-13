@@ -1,7 +1,7 @@
 Documentation Annotations
 ==============================================
 
-[![Build Status](https://travis-ci.org/SirWellington/commons-annotations.svg)](https://travis-ci.org/SirWellington/commons-annotations)
+[![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
 # Purpose
 
@@ -39,16 +39,16 @@ To use, simply add the following maven dependency.
 ## Release
 ```xml
 <dependency>
-	<groupId>sir.wellington.commons</groupId>
-	<artifactId>commons-annotations</artifactId>
-	<version>1.0.0</version>
+	<groupId>sir.wellington.alchemy</groupId>
+	<artifactId>alchemy-annotations</artifactId>
+	<version>1.0</version>
 </dependency>
 ```
 
 
 ## JitPack 
 
-You can also use [JitPack.io](https://jitpack.io/#SirWellington/commons-annotations/v1.0.0).
+You can also use [JitPack.io](https://jitpack.io/#SirWellington/alchemy-annotations/v1.0.0).
 
 ```xml
 <repository>
@@ -60,7 +60,7 @@ You can also use [JitPack.io](https://jitpack.io/#SirWellington/commons-annotati
 ```xml
 <dependency>
     <groupId>com.github.SirWellington</groupId>
-    <artifactId>commons-annotations</artifactId>
+    <artifactId>alchemy-annotations</artifactId>
     <version>v1.0.0</version>
 </dependency>
 ```
@@ -183,7 +183,7 @@ class AppleFanboy implements AppleWatcher
 # Release Notes
 
 
-## 1.0.1
+## 1.1
 
 
 ## 1.0.0
