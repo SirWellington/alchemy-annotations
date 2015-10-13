@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Wellington.
+ * Copyright 2015 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@ package sir.wellington.alchemy.annotations.arguments;
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
 import java.lang.annotation.Target;
 
@@ -27,10 +28,11 @@ import java.lang.annotation.Target;
  * Specifies that the argument or field CANNOT be {@code null}.
  *
  * @see Nullable
+ * 
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
+@Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
 public @interface NonNull 
 {
 

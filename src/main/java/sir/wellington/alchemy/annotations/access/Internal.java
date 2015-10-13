@@ -13,25 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.concurrency;
+package sir.wellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to indicate that a variable or class is designed to be immutable. Once it is created and
- * set, it's underlying state cannot be changed.
+ * Used to tag a section of code as intended for internal use only. Clients should not try to use
+ * classes or functions tagged as {@link Internal} to the Project.
  *
- * @see Mutable
- * 
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
-public @interface Immutable
+@Target(
+{
+    TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD
+})
+public @interface Internal
 {
 
 }
