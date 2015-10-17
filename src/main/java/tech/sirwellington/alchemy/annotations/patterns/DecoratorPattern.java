@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.patterns;
 
 /**
  * Use to document the application and use of the Decorator Pattern, explained

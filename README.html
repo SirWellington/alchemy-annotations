@@ -861,14 +861,14 @@ body .markdown-body
   margin: 0.3em 0 0.25em -1.6em;
   vertical-align: middle;
 }</style><title>README</title></head><body><article class="markdown-body"><h1>
-<a id="user-content-documentation-annotations" class="anchor" href="#documentation-annotations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation Annotations</h1>
+<a id="user-content-alchemy-annotations" class="anchor" href="#alchemy-annotations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alchemy Annotations</h1>
 
 <p><a href="https://travis-ci.org/SirWellington/alchemy-annotations"><img src="https://camo.githubusercontent.com/461445bcb7d94c5cb83c70bb5ad21333ba906015/68747470733a2f2f7472617669732d63692e6f72672f53697257656c6c696e67746f6e2f616c6368656d792d616e6e6f746174696f6e732e737667" alt="Build Status" data-canonical-src="https://travis-ci.org/SirWellington/alchemy-annotations.svg" style="max-width:100%;"></a></p>
 
 <h1>
 <a id="user-content-purpose" class="anchor" href="#purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose</h1>
 
-<p>Contains annotations which allow Java Developers to more clearly document code. 
+<p>Part of the Alchemy collection, contains annotations which allow Java Developers to more clearly document code.
 It can be used to document intent, expectations, behaviors, structure, and more.</p>
 
 <h1>
@@ -889,11 +889,6 @@ the classes.</p>
 </ul>
 
 <h1>
-<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
-
-<p>This Software is licensed under the Apache 2.0 License</p>
-
-<h1>
 <a id="user-content-building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h1>
 
 <p>This project builds with maven. Just run a <code>mvn clean install</code> to compile and install to your local maven repository</p>
@@ -911,25 +906,18 @@ the classes.</p>
 <a id="user-content-release" class="anchor" href="#release" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release</h2>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
-    &lt;<span class="pl-ent">groupId</span>&gt;sir.wellington.alchemy&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;tech.sirwellington.alchemy&lt;/<span class="pl-ent">groupId</span>&gt;
     &lt;<span class="pl-ent">artifactId</span>&gt;alchemy-annotations&lt;/<span class="pl-ent">artifactId</span>&gt;
     &lt;<span class="pl-ent">version</span>&gt;1.0&lt;/<span class="pl-ent">version</span>&gt;
 &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
 
 <h2>
-<a id="user-content-jitpack" class="anchor" href="#jitpack" aria-hidden="true"><span class="octicon octicon-link"></span></a>JitPack</h2>
-
-<p>You can also use <a href="https://jitpack.io/#SirWellington/alchemy-annotations/v1.0.0">JitPack.io</a>.</p>
-
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">repository</span>&gt;
-    &lt;<span class="pl-ent">id</span>&gt;jitpack.io&lt;/<span class="pl-ent">id</span>&gt;
-    &lt;<span class="pl-ent">url</span>&gt;https://jitpack.io&lt;/<span class="pl-ent">url</span>&gt;
-&lt;/<span class="pl-ent">repository</span>&gt;</pre></div>
+<a id="user-content-snapshot" class="anchor" href="#snapshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Snapshot</h2>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
-    &lt;<span class="pl-ent">groupId</span>&gt;com.github.SirWellington&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;tech.sirwellington.alchemy&lt;/<span class="pl-ent">groupId</span>&gt;
     &lt;<span class="pl-ent">artifactId</span>&gt;alchemy-annotations&lt;/<span class="pl-ent">artifactId</span>&gt;
-    &lt;<span class="pl-ent">version</span>&gt;v1.0.0&lt;/<span class="pl-ent">version</span>&gt;
+    &lt;<span class="pl-ent">version</span>&gt;1.1-SNAPSHOT&lt;/<span class="pl-ent">version</span>&gt;
 &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
 
 <h1>
@@ -948,14 +936,14 @@ the classes.</p>
 <li>
 <code>@NonNull</code> - Indicates that a parameter or field that should never be <code>null</code>. I.E., it's an error condition if it is <code>null</code>.</li>
 <li>
-<code>@NonEmpty</code> - Indicates that <code>String</code>, <code>Array</code>, <code>Collection</code>, or similar type should never be empty. </li>
+<code>@NonEmpty</code> - Indicates that <code>String</code>, <code>Array</code>, <code>Collection</code>, or similar type should never be empty.</li>
 </ul>
 
 <h3>
 <a id="user-content-examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-k">class</span> <span class="pl-en">MyService</span>
-{   
+{
     <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> name;
 
     <span class="pl-en">MyService</span>(<span class="pl-k">@NonEmpty</span> <span class="pl-smi">String</span> <span class="pl-v">serviceName</span>)
@@ -1002,7 +990,7 @@ the classes.</p>
     {
         <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-smi">Pizza</span>(<span class="pl-s"><span class="pl-pds">"</span>Tasty!<span class="pl-pds">"</span></span>);
     }
-}   
+}
 
 <span class="pl-k">class</span> <span class="pl-en">PizzaStore</span>
 {
@@ -1013,9 +1001,9 @@ the classes.</p>
     <span class="pl-c1">...</span>
 
     <span class="pl-k">void</span> <span class="pl-en">serveCustomer</span>()
-    {   
+    {
         <span class="pl-c">//Handle synchronization</span>
-        <span class="pl-k">synchronized</span> (factory) 
+        <span class="pl-k">synchronized</span> (factory)
         {
             <span class="pl-smi">Pizza</span> pizza <span class="pl-k">=</span> factory<span class="pl-k">.</span>makePizza();
             <span class="pl-c1">...</span>
@@ -1040,12 +1028,12 @@ the classes.</p>
 <li><code>@FluidAPIPattern</code></li>
 </ul>
 
-<p>Some of these patterns require you to also document the role of each object in the pattern. 
+<p>Some of these patterns require you to also document the role of each object in the pattern.
 For example, the Observer Pattern:</p>
 
 <div class="highlight highlight-source-java"><pre>
 @ObserverPattern(<span class="pl-c1">SUBJECT</span>)
-<span class="pl-k">class</span> <span class="pl-en">Apple</span> 
+<span class="pl-k">class</span> <span class="pl-en">Apple</span>
 {
 <span class="pl-c1">...</span>
 }
@@ -1060,6 +1048,13 @@ For example, the Observer Pattern:</p>
     }
 }
 </pre></div>
+
+<h1>
+<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>This Software is licensed under the Apache 2.0 License</p>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
 
 <h1>
 <a id="user-content-release-notes" class="anchor" href="#release-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Notes</h1>

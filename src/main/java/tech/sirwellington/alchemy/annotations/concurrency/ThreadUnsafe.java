@@ -13,23 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.CONSTRUCTOR;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Apply to Classes that apply the Singleton Design Pattern.
- *
- * @see
- * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
- *
+ * +Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
+ * <br>
+ * +Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
+ * <p>
+ * Thread Unsafety means that  special precautions must be taken to handle concurrency issues while
+ * using this object. 
+ * 
+ * @see ThreadUnsafe
+ * @see Mutable
+ * 
  * @author SirWellington
  */
 @Documented
-@Target(TYPE)
-public @interface SingletonPattern
+@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE })
+public @interface ThreadUnsafe
 {
 
 }
