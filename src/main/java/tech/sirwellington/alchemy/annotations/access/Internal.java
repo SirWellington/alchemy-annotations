@@ -14,25 +14,30 @@
  * limitations under the License.
  */
 
-
-package sir.wellington.alchemy.annotations.arguments;
+package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
-import java.util.Collection;
 
 /**
- * Specifies that the argument or field CANNOT be {@code null} or empty. This applies to
- * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
- *
+ * Used to tag Types or Code as intended for internal use only.
+ * 
+ * Developers should try not to use classes or functions tagged as {@link Internal},
+ * unless they are coding within that project.
+ * 
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
-public @interface NonEmpty 
+@Retention(CLASS)
+@Target({ TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
+public @interface Internal
 {
 
 }

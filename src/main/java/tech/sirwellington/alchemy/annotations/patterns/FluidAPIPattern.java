@@ -13,29 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
-package sir.wellington.alchemy.annotations.concurrency;
+package tech.sirwellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
-
 /**
- * Used to indicate that a variable or class is not designed to be immutable. That is, its
- * underlying can be changed once set.
+ * Used to document the application or use of the Fluid API Style, explained
+ * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
  *
- * @see Immutable
- * 
+ * @see
+ * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
  * @author SirWellington
  */
-
 @Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
-public @interface Mutable
+@Target(TYPE)
+public @interface FluidAPIPattern
 {
 
 }

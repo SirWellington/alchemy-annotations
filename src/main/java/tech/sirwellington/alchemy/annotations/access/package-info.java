@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /**
- * Annotations that document the application and use of Design Patterns.
+ * Annotations for documenting expectations about access to data or functionality.
  */
-package sir.wellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.access;

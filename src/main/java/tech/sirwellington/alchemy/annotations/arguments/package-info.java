@@ -14,26 +14,7 @@
  * limitations under the License.
  */
 
-
-package sir.wellington.alchemy.annotations.arguments;
-
-import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
-import java.lang.annotation.Target;
-
 /**
- * Specifies that the argument or field CANNOT be {@code null}.
- *
- * @see Nullable
- * 
- * @author SirWellington
+ * Annotations about arguments, fields, and function return values.
  */
-@Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface NonNull 
-{
-
-}
+package tech.sirwellington.alchemy.annotations.arguments;

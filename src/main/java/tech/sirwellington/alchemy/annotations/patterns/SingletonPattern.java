@@ -13,25 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.concurrency;
+package tech.sirwellington.alchemy.annotations.patterns;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to indicate that a variable or class is designed to be immutable. Once it is created and
- * set, it's underlying state cannot be changed.
+ * Apply to Classes that apply the Singleton Design Pattern.
  *
- * @see Mutable
- * 
+ * @see
+ * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ *
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
-public @interface Immutable
+@Target(TYPE)
+public @interface SingletonPattern
 {
 
 }

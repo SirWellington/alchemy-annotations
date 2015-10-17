@@ -1,11 +1,11 @@
-Documentation Annotations
+Alchemy Annotations
 ==============================================
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
 # Purpose
 
-Contains annotations which allow Java Developers to more clearly document code. 
+Contains annotations which allow Java Developers to more clearly document code.
 It can be used to document intent, expectations, behaviors, structure, and more.
 
 # Why use this
@@ -18,12 +18,8 @@ the classes.
 
 # Requirements
 
-* JDK 8
-* Maven
-
-# License
-
-This Software is licensed under the Apache 2.0 License
++ JDK 8
++ Maven
 
 
 # Building
@@ -39,29 +35,19 @@ To use, simply add the following maven dependency.
 ## Release
 ```xml
 <dependency>
-	<groupId>sir.wellington.alchemy</groupId>
+	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
 	<version>1.0</version>
 </dependency>
 ```
 
-
-## JitPack 
-
-You can also use [JitPack.io](https://jitpack.io/#SirWellington/alchemy-annotations/v1.0.0).
-
-```xml
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
-```
+## Snapshot
 
 ```xml
 <dependency>
-    <groupId>com.github.SirWellington</groupId>
-    <artifactId>alchemy-annotations</artifactId>
-    <version>v1.0.0</version>
+	<groupId>tech.sirwellington.alchemy</groupId>
+	<artifactId>alchemy-annotations</artifactId>
+	<version>1.1-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -73,15 +59,15 @@ Documentation for arguments or fields.
 
 + `@Nullable` - Indicates that a parameter or field can be `null`. I.E., `null` is an acceptable value.
 + `@NonNull` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
-+ `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty. 
++ `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
 
 ### Examples
 
 ```java
 class MyService
-{	
+{
 	private final String name;
-	
+
 	MyService(@NonEmpty String serviceName)
 	{
 		Arguments.checkThat(serviceName)
@@ -122,7 +108,7 @@ class PizzaFactory
 	{
 		return new Pizza("Tasty!");
 	}
-}	
+}
 
 class PizzaStore
 {
@@ -133,9 +119,9 @@ class PizzaStore
 	...
 
 	void serveCustomer()
-	{	
+	{
 		//Handle synchronization
-		synchronized (factory) 
+		synchronized (factory)
 		{
 			Pizza pizza = factory.makePizza();
 			...
@@ -157,13 +143,13 @@ Documents the Application or Use of Design Patterns. This allows others to know 
 + `@ObserverPattern`
 + `@FluidAPIPattern`
 
-Some of these patterns require you to also document the role of each object in the pattern. 
+Some of these patterns require you to also document the role of each object in the pattern.
 For example, the Observer Pattern:
 
 ```java
 
 @ObserverPattern(SUBJECT)
-class Apple 
+class Apple
 {
 ...
 }
@@ -179,6 +165,12 @@ class AppleFanboy implements AppleWatcher
 }
 
 ```
+
+# License
+
+This Software is licensed under the Apache 2.0 License
+
+http://www.apache.org/licenses/LICENSE-2.0
 
 # Release Notes
 
