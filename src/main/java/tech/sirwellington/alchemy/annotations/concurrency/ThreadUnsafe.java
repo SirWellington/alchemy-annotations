@@ -13,25 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.concurrency;
+package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to indicate that a variable or class is designed to be immutable. Once it is created and
- * set, it's underlying state cannot be changed.
+ * Designate the use of an Object or Variable as Thread-Safe. This means that no special precautions
+ * must be taken to handle concurrency issues while using this object. Usually Objects that are
+ * immutable or handle synchronization internally can be marked as {@link ThreadSafe}.
  *
+ * @see ThreadUnsafe
  * @see Mutable
  * 
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
-public @interface Immutable
+@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE})
+public @interface ThreadUnsafe
 {
 
 }

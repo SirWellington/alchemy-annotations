@@ -15,25 +15,27 @@
  */
 
 
-package sir.wellington.alchemy.annotations.arguments;
+package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
+
 /**
- * Specifies that the argument or field CANNOT be {@code null}.
+ * Used to indicate that a variable or class is not designed to be immutable. That is, its
+ * underlying can be changed once set.
  *
- * @see Nullable
+ * @see Immutable
  * 
  * @author SirWellington
  */
+
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface NonNull 
+@Target({ TYPE, FIELD, LOCAL_VARIABLE})
+public @interface Mutable
 {
 
 }

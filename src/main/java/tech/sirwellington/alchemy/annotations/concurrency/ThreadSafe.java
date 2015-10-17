@@ -13,28 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.access;
+package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to tag a section of code as intended for internal use only. Clients should not try to use
- * classes or functions tagged as {@link Internal} to the Project.
+ * Designate the use of an Object or variable as Thread-Safe. This means that no special precautions
+ * must be taken to handle concurrency issues while using this object. Usually Objects that are
+ * immutable or handle synchronization internally can be marked as {@link ThreadSafe}.
  *
+ * @see ThreadUnsafe
+ * @see Immutable
+ * 
  * @author SirWellington
  */
 @Documented
-@Target(
-{
-    TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD
-})
-public @interface Internal
+@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD})
+public @interface ThreadSafe
 {
 
 }

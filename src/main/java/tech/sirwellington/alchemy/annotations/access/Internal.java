@@ -13,23 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sir.wellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application or use of the Fluid API Style, explained
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
+ * Used to tag a section of code as intended for internal use only. Clients should not try to use
+ * classes or functions tagged as {@link Internal} to the Project.
  *
- * @see
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
  * @author SirWellington
  */
 @Documented
-@Target(TYPE)
-public @interface FluidAPIPattern
+@Target(
+{
+    TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD
+})
+public @interface Internal
 {
 
 }

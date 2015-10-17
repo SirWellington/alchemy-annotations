@@ -13,7 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package tech.sirwellington.alchemy.annotations.patterns;
+
+import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Target;
+
 /**
- * Annotations for documenting expectations about access to data or functionality.
+ * Apply to Classes that apply the Singleton Design Pattern.
+ *
+ * @see
+ * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ *
+ * @author SirWellington
  */
-package sir.wellington.alchemy.annotations.access;
+@Documented
+@Target(TYPE)
+public @interface SingletonPattern
+{
+
+}
