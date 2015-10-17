@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
@@ -21,19 +22,21 @@ import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
 /**
- * Used to tag a section of code as intended for internal use only. Clients should not try to use
- * classes or functions tagged as {@link Internal} to the Project.
- *
+ * Used to tag Types or Code as intended for internal use only.
+ * 
+ * Developers should try not to use classes or functions tagged as {@link Internal},
+ * unless they are coding within that project.
+ * 
  * @author SirWellington
  */
 @Documented
-@Target(
-{
-    TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD
-})
+@Retention(CLASS)
+@Target({ TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Internal
 {
 

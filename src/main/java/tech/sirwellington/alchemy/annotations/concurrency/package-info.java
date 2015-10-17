@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /**
- * Annotations documenting concepts and issues relating to Concurrency.
+ * Annotations about Concurrency.
  */
 package tech.sirwellington.alchemy.annotations.concurrency;

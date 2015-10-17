@@ -23,17 +23,20 @@ import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Designate the use of an Object or Variable as Thread-Safe. This means that no special precautions
- * must be taken to handle concurrency issues while using this object. Usually Objects that are
- * immutable or handle synchronization internally can be marked as {@link ThreadSafe}.
- *
+ * +Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
+ * <br>
+ * +Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
+ * <p>
+ * Thread Unsafety means that  special precautions must be taken to handle concurrency issues while
+ * using this object. 
+ * 
  * @see ThreadUnsafe
  * @see Mutable
  * 
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE})
+@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE })
 public @interface ThreadUnsafe
 {
 

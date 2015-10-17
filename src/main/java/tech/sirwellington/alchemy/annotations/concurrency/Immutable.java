@@ -13,24 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
 /**
- * Used to indicate that a variable or class is designed to be immutable. Once it is created and
- * set, it's underlying state cannot be changed.
+ * Used on a class to indicate that it was designed to be immutable. Used on a variable to indicate
+ * that it is expected be {@code final} and immutable. Once it is created and set, it's underlying
+ * state <b>should not</b> be changed.
  *
  * @see Mutable
- * 
+ *
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, LOCAL_VARIABLE})
+@Retention(CLASS)
+@Target({ TYPE, FIELD, LOCAL_VARIABLE })
 public @interface Immutable
 {
 

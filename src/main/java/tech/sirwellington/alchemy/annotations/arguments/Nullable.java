@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 package tech.sirwellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
@@ -25,12 +24,13 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import java.lang.annotation.Target;
 
 /**
- * Specifies that {@code null} is an acceptable value for the argument or field.
+ * Specifies that an argument or field <b> may be</b> {@code null},
+ * as it is considered an acceptable value.
  *
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
+@Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Nullable 
 {
 
