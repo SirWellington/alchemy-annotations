@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy-annotations</artifactId>
     <version>1.2-SNAPSHOT</version>
@@ -11,16 +11,17 @@
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
         Part of the Alchemy collection.
-        Java Annotations that allow clearer documentation of intent of your code.
 
         Write what you mean, mean what you write.
+
+        Alchemy Annotations allow clearer documentation of intent of your code.
     </description>
-    
+
     <organization>
-        <name>Sir Wellington</name>
+        <name>SirWellington Tech</name>
         <url>https://github.com/SirWellington</url>
     </organization>
-    
+
     <developers>
         <developer>
             <name>Juan Wellington Moreno</name>
@@ -33,7 +34,7 @@
             </roles>
         </developer>
     </developers>
-    
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -41,12 +42,12 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    
+
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/SirWellington/alchemy-annotations/issues</url>
     </issueManagement>
-    
+
     <scm>
         <connection>scm:git:git@github.com:SirWellington/alchemy-annotations.git</connection>
         <developerConnection>scm:git:git@github.com:SirWellington/alchemy-annotations.git</developerConnection>
@@ -58,30 +59,35 @@
     <prerequisites>
         <maven>3.0.3</maven>
     </prerequisites>
-        
+
+    <!-- END OF POM METADATA -->
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-    
+
+
     <distributionManagement>
-        
+
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-        
+
         <repository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
-        
+
     </distributionManagement>
-    
+
     <build>
         <plugins>
-            <!--Javadoc--> 
+            
+            <!--Javadoc-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -103,7 +109,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <!--Sources-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -119,22 +125,22 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <!--Code Coverage-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.5.201505241946</version>
-                
+
                 <executions>
-                    
+
                     <execution>
                         <id>default-prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
-                    
+
                     <execution>
                         <id>default-report</id>
                         <phase>prepare-package</phase>
@@ -142,13 +148,13 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-                    
+
                     <execution>
                         <id>default-check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
-                        
+
                         <configuration>
                             <rules>
                             </rules>
@@ -156,18 +162,18 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
         </plugins>
     </build>
-    
-    
+
+
     <profiles>
         <profile>
             <id>release</id>
-            
+
             <build>
                 <plugins>
-                    
+
                     <!--Code Signing-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -183,7 +189,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    
+
                     <!--Release Plugin-->
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
@@ -196,10 +202,11 @@
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
-                    
+
                 </plugins>
             </build>
-            
+
         </profile>
     </profiles>
+
 </project>
