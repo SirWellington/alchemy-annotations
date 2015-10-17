@@ -88,6 +88,11 @@
                 <version>2.10.3</version>
                 <configuration>
                     <failOnError>false</failOnError>
+                    <linksource>true</linksource>
+                    <links>
+                        <link>http://docs.oracle.com/javase/8/docs/api/</link>
+                    </links>
+                    <stylesheetfile>${basedir}/src/main/css/javadoc-style-sheet.css</stylesheetfile>
                 </configuration>
                 <executions>
                     <execution>

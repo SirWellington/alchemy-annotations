@@ -14,24 +14,26 @@
  * limitations under the License.
  */
 
-
 package tech.sirwellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.PARAMETER;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
 import java.util.Collection;
 
 /**
- * Specifies that the argument or field CANNOT be {@code null} or empty. This applies to
+ * Specifies that an argument or field <b> should not</b> be {@code null} or empty. This applies to
  * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
  *
  * @author SirWellington
  */
 @Documented
-@Target({PARAMETER, FIELD, LOCAL_VARIABLE})
+@Retention(RUNTIME)
+@Target({ PARAMETER, FIELD, LOCAL_VARIABLE })
 public @interface NonEmpty 
 {
 
