@@ -23,7 +23,7 @@ relationship between them.
 
 # Requirements
 
-+ JDK 8
++ Java 8
 + Maven
 
 
