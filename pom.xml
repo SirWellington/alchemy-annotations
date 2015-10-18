@@ -15,7 +15,11 @@
 
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
-        The Alchemy Collection. Making Java fun again.
+        Part of the Alchemy collection.
+
+        Write what you mean, mean what you write.
+
+        Alchemy Annotations allow clearer documentation of intent of your code.
     </description>
 
     <licenses>
