@@ -26,9 +26,10 @@ import java.lang.annotation.Target;
 import java.util.Collection;
 
 /**
- * Specifies that an argument or field <b> should not</b> be {@code null} or empty. This applies to
+ * Labels an argument or field <b> should not</b> be {@code null} or empty. This applies to
  * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
  *
+ * @see NonNull
  * @author SirWellington
  */
 @Documented

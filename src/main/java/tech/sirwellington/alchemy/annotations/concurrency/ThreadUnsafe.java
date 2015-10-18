@@ -23,9 +23,9 @@ import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * +Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
+ * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
  * <br>
- * +Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
+ * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
  * <p>
  * Thread Unsafety means that  special precautions must be taken to handle concurrency issues while
  * using this object. 

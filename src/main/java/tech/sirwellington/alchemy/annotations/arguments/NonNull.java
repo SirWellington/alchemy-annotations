@@ -26,9 +26,10 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
 
 /**
- * Specifies that an argument or field <b> should not</b> be {@code null}.
+ * Labels an argument or field <b> should not</b> be {@code null}.
  *
  * @see Nullable
+ * @see NonEmpty
  * 
  * @author SirWellington
  */
