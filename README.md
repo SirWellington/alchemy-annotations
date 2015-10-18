@@ -13,8 +13,8 @@ It can be used to document intent, expectations, behaviors, structure, and more.
 It makes it much easier for other developers and architects to understand what is going on in the code base.
 It also allows us to more explicitly document intent and expectations, reducing the chance for human mistake.
 
-For example, by applying the `@StrategyPattern` annotation to a few classes, we know exactly what relation is intended between
-the classes.
+For example, by applying the `@StrategyPattern` annotation to a few classes, we know can more easily understand the
+relationship between them.
 
 # Requirements
 
