@@ -249,12 +249,6 @@ Some of these patterns require you to also document the role of each object in t
 For example, the Observer Pattern:
 
 
-# License
-
-This Software is licensed under the Apache 2.0 License
-
-http://www.apache.org/licenses/LICENSE-2.0
-
 # Release Notes
 
 ## 1.2
@@ -269,3 +263,9 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 ## 1.0.0
 + Initial Release
+
+# License
+
+This Software is licensed under the Apache 2.0 License
+
+http://www.apache.org/licenses/LICENSE-2.0
