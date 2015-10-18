@@ -13,23 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
-
-import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.TYPE;
-import java.lang.annotation.Target;
 
 /**
- * Used to document the application or use of the Fluid API Style, explained
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
+ * Annotations that document the application and use of Textbook Design Patterns.
  *
  * @see
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
- * @author SirWellington
+ * <a href="https://en.wikipedia.org/wiki/Design_Patterns">https://en.wikipedia.org/wiki/Design_Patterns</a>
+ * @see
+ * <a href="http://www.oodesign.com">http://www.oodesign.com</a>
  */
-@Documented
-@Target(TYPE)
-public @interface FluidAPIPattern
-{
-
-}
+package tech.sirwellington.alchemy.annotations.designs.patterns;

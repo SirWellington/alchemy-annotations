@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2015 SirWellington Tech.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,23 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
 
 /**
- * Apply to Classes that apply the Singleton Design Pattern.
- *
- * @see
- * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ * Labels a Class as <b>non-instantiable</b>, meaning an Object of this type cannot be created. This
+ * is usually applied to static utility classes that house static functions.
  *
  * @author SirWellington
  */
 @Documented
+@Retention(RUNTIME)
 @Target(TYPE)
-public @interface SingletonPattern
+public @interface NonInstantiable
 {
 
 }

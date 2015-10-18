@@ -27,7 +27,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
 /**
- * Used to tag Types or Code as intended for internal use only.
+ * Labels Types or Code as intended for internal use only.
  * 
  * Developers should try not to use classes or functions tagged as {@link Internal},
  * unless they are coding within that project.

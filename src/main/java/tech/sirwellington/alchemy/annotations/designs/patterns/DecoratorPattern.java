@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 /**
- * Use to document the application and use of the Decorator Pattern, explained
+ * Documents the application and use of the Decorator Pattern, explained
  * <a href="http://www.oodesign.com/decorator-pattern.html">here</a>.
  *
  * @see

@@ -25,9 +25,11 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
 /**
- * Used on a class to indicate that it was designed to be immutable. Used on a variable to indicate
- * that it is expected be {@code final} and immutable. Once it is created and set, it's underlying
- * state <b>should not</b> be changed.
+ * + Used on a class to indicate that it was designed to be immutable.
+ * <br>
+ * + Used on a variable to indicate that it is expected be {@code final} and immutable.
+ * <p>
+ * Once it is created and set, it's underlying state <b>should not</b> be changed.
  *
  * @see Mutable
  *

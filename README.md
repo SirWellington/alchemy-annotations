@@ -13,8 +13,8 @@ It can be used to document intent, expectations, behaviors, structure, and more.
 It makes it much easier for other developers and architects to understand what is going on in the code base.
 It also allows us to more explicitly document intent and expectations, reducing the chance for human mistake.
 
-For example, by applying the `@StrategyPattern` annotation to a few classes, we know exactly what relation is intended between
-the classes.
+For example, by applying the `@StrategyPattern` annotation to a few classes, we know can more easily understand the
+relationship between them.
 
 # Requirements
 
@@ -28,8 +28,6 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 # Download
 
-> This library is not yet available on Maven Central
-
 To use, simply add the following maven dependency.
 
 ## Release
@@ -37,22 +35,63 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.0</version>
+	<version>1.2</version>
 </dependency>
 ```
 
 ## Snapshot
 
+>First add the Snapshot Repository
+```xml
+<repository>
+	<id>ossrh</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+</repository>
+```
+
 ```xml
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.3-SNAPSHOT</version>
 </dependency>
 ```
 
 # API
- Applying anotations is simple.
+ Applying annotations is simple.
+
+## Access
+`tech.sirwellington.alchemy.annotations.access`
+
+Labels describing expectations about access to code or data.
+
+
++ `@Internal` - Indicates that a Type, Function, or Variable is only intended to be used within the Project.
++ `@NonInstantiable` - Indicates that a Class is not designed to be instantiated, and may throw an Exception if an attempt is made to instantiate it.
+
+### Examples
+
+#### @Internal
+
+```java
+@Internal
+public class MapOperations
+{
+	public Map findIntersection(Map first, map second) { }
+}
+```
+
+#### @NonInstantiable
+```java
+@NonInstantiable
+public final class Strings
+{
+	private Strings() { throw new IllegalAccessException(); }
+
+	public static String toJson(String string) { }
+}
+```
+
 
 ## Arguments
 Documentation for arguments or fields.
@@ -63,6 +102,7 @@ Documentation for arguments or fields.
 
 ### Examples
 
+#### @NonEmpty
 ```java
 class MyService
 {
@@ -77,7 +117,7 @@ class MyService
 }
 
 ```
-
+#### @Nullable
 ```java
 
 public Pizza create(Bread bread, @Nullable List<Condiments> condiments)
@@ -97,11 +137,15 @@ Documentation for Concurrency concerns and concepts.
 
 + `@ThreadSafe` - Indicates that an Object or method is Thread-Safe and can be used in multi-threaded environments without additional precautions.
 + `@ThreadUnsafe` - Opposite of `@ThreadSafe`. Used to indicate that an object is definitely not Thread-Safe and should be handled cautiously in multi-threaded environments.
++ `@Mutable` - Labels an Object or variable as Mutable, meaning that its state **can** change once set.
++ `@Immutable` - Labels an Object or variable as Immutable, meaning that its state **cannot** change once set.
 
 ### Examples
-```java
 
-@ThreadUnsafe
+#### @ThreadSafe
+
+```java
+@ThreadSafe
 class PizzaFactory
 {
 	Pizza makePizza()
@@ -110,51 +154,74 @@ class PizzaFactory
 	}
 }
 
+#### @ThreadUnsafe
+
+```java
+@ThreadUnsafe
 class PizzaStore
 {
-	//Can also be used on variables
-	@ThreadUnsafe
-	private final PizzaFactory factory;
+	private PizzaFactory factory;
 
 	...
 
 	void serveCustomer()
 	{
-		//Handle synchronization
-		synchronized (factory)
-		{
-			Pizza pizza = factory.makePizza();
-			...
-		}
+		factory.makePizza();
+		//...
 	}
 }
 ```
+#### @Mutable
+
+```java
+@Mutable
+class Store
+{
+	@Mutable
+	private List<Customer> customers;
+}
+```
+
+#### @Immutable
+
+```java
+class Store
+{
+	private List<Customer> customers;
+
+	@Immutable
+	private final String storeName;
+}
+```
+
 
 ## Design Patterns
 Documents the Application or Use of Design Patterns. This allows others to know right away how objects relate.
+
+`tech.sirwellington.alchemy.annotations.designs.patterns`
 
 + `@BuilderPattern`
 + `@FactoryPattern`
 + `@AbstractFactoryPattern`
 + `@StrategyPattern`
 + `@DecoratorPattern`
-+ `@FluidAPIPattern`
 + `@SingletonPattern`
 + `@ObserverPattern`
-+ `@FluidAPIPattern`
++ `@StatePattern`
 
-Some of these patterns require you to also document the role of each object in the pattern.
-For example, the Observer Pattern:
+### Examples
+
+
+#### @ObserverPattern
 
 ```java
-
-@ObserverPattern(SUBJECT)
+@ObserverPattern(role = SUBJECT)
 class Apple
 {
 ...
 }
 
-@ObserverPattern(OBSERVER)
+@ObserverPattern(role = OBSERVER)
 class AppleFanboy implements AppleWatcher
 {
 
@@ -166,6 +233,17 @@ class AppleFanboy implements AppleWatcher
 
 ```
 
+## Other Designs
+These are not "Textbook" Design Patterns, but are still common and useful.
+
+`tech.sirwellington.alchemy.annotations.designs`
+
++ `@FluidAPIDesign`
+
+Some of these patterns require you to also document the role of each object in the pattern.
+For example, the Observer Pattern:
+
+
 # License
 
 This Software is licensed under the Apache 2.0 License
@@ -174,9 +252,15 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 # Release Notes
 
+## 1.2
++ New Annotations
+	+ `@NonInstantiable`
+	+ `@StatePattern`
 
 ## 1.1
-
++ New Annotations
+	+ `@Internal`
+	+ Package and Group ID rename to `tech.sirwellington`
 
 ## 1.0.0
 + Initial Release

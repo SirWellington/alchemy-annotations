@@ -13,7 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /**
- * Annotations that document the application and use of Design Patterns.
+ * Annotations that document the application and use of Designs that are <b>not</b>
+ * Textbook Design Patterns.
+ *
+ * @see tech.sirwellington.alchemy.annotations.designs.patterns
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs;

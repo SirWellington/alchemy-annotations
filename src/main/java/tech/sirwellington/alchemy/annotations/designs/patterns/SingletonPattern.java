@@ -13,29 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package tech.sirwellington.alchemy.annotations.arguments;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.PARAMETER;
-import java.lang.annotation.Retention;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
-import java.util.Collection;
 
 /**
- * Labels an argument or field <b> should not</b> be {@code null} or empty. This applies to
- * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
+ * Documents a Class that uses the Singleton Design Pattern.
  *
- * @see NonNull
+ * @see
+ * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ *
  * @author SirWellington
  */
 @Documented
-@Retention(RUNTIME)
-@Target({ PARAMETER, FIELD, LOCAL_VARIABLE })
-public @interface NonEmpty 
+@Target(TYPE)
+public @interface SingletonPattern
 {
 
 }

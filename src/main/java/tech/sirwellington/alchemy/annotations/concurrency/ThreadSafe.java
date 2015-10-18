@@ -26,9 +26,9 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
 /**
- * +Used on a class to indicate that it is designed to be Thread-Safe. 
+ * + Used on a class to indicate that it is designed to be Thread-Safe. 
  * <br>
- * +Used on a variable to indicate that it is expected to be Thread-Safe.
+ * + Used on a variable to indicate that it is expected to be Thread-Safe.
  * <p>
  * Thread Safety means that no special precautions must be taken to handle concurrency issues while
  * using this object. Thread-Safe Objects are usually immutable or handle synchronization internally
