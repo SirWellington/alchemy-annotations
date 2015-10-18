@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>alchemy-annotations</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
@@ -17,24 +17,6 @@
     <description>
         The Alchemy Collection. Making Java fun again.
     </description>
-
-    <organization>
-        <name>SirWellington Tech</name>
-        <url>https://github.com/SirWellington</url>
-    </organization>
-
-    <developers>
-        <developer>
-            <name>Juan Wellington Moreno</name>
-            <email>jwellington.moreno@gmail.com</email>
-            <id>SirWellington</id>
-            <organizationUrl>https://github.com/SirWellington</organizationUrl>
-            <roles>
-                <role>owner</role>
-                <role>developer</role>
-            </roles>
-        </developer>
-    </developers>
 
     <licenses>
         <license>
@@ -62,12 +44,5 @@
     </prerequisites>
 
     <!-- END OF POM METADATA -->
-
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 
 </project>
