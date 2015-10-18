@@ -28,8 +28,6 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 # Download
 
-> This library is not yet available on Maven Central
-
 To use, simply add the following maven dependency.
 
 ## Release
@@ -37,7 +35,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 </dependency>
 ```
 
@@ -47,12 +45,12 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 </dependency>
 ```
 
 # API
- Applying anotations is simple.
+ Applying annotations is simple.
 
 ## Arguments
 Documentation for arguments or fields.
@@ -176,7 +174,9 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 
 ## 1.1
-
++ New Annotations
+	+ `@Internal`
+	+ Package and Group ID rename to `tech.sirwellington`
 
 ## 1.0.0
 + Initial Release
