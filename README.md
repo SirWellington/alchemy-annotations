@@ -1,16 +1,21 @@
 Alchemy Annotations
 ==============================================
 
+## "Write what you mean, mean what you write."
+
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
 # Purpose
 
-Contains annotations which allow Java Developers to more clearly document code.
+Alchemy Annotations allow clearer documentation of intent of your code.
+
 It can be used to document intent, expectations, behaviors, structure, and more.
 
 # Why use this
 
-It makes it much easier for other developers and architects to understand what is going on in the code base.
+It is much easier for other developers and architects to understand what is going on in the code base when they
+know what to look for, and what behavior to expect.
+
 It also allows us to more explicitly document intent and expectations, reducing the chance for human mistake.
 
 For example, by applying the `@StrategyPattern` annotation to a few classes, we know can more easily understand the
