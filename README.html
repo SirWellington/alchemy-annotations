@@ -910,6 +910,15 @@ the classes.</p>
 <h2>
 <a id="user-content-snapshot" class="anchor" href="#snapshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Snapshot</h2>
 
+<blockquote>
+<p>First add the Snapshot Repository</p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">repository</span>&gt;
+    &lt;<span class="pl-ent">id</span>&gt;ossrh&lt;/<span class="pl-ent">id</span>&gt;
+    &lt;<span class="pl-ent">url</span>&gt;https://oss.sonatype.org/content/repositories/snapshots&lt;/<span class="pl-ent">url</span>&gt;
+&lt;/<span class="pl-ent">repository</span>&gt;</pre></div>
+</blockquote>
+
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
     &lt;<span class="pl-ent">groupId</span>&gt;tech.sirwellington.alchemy&lt;/<span class="pl-ent">groupId</span>&gt;
     &lt;<span class="pl-ent">artifactId</span>&gt;alchemy-annotations&lt;/<span class="pl-ent">artifactId</span>&gt;
@@ -936,7 +945,7 @@ the classes.</p>
 </ul>
 
 <h3>
-<a id="user-content-examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+<a id="user-content-example-uses" class="anchor" href="#example-uses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Uses</h3>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-k">class</span> <span class="pl-en">MyService</span>
 {
@@ -976,7 +985,7 @@ the classes.</p>
 </ul>
 
 <h3>
-<a id="user-content-examples-1" class="anchor" href="#examples-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+<a id="user-content-examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
 
 <div class="highlight highlight-source-java"><pre>
 @<span class="pl-smi">ThreadUnsafe</span>
@@ -1012,6 +1021,8 @@ the classes.</p>
 
 <p>Documents the Application or Use of Design Patterns. This allows others to know right away how objects relate.</p>
 
+<p><code>tech.sirwellington.alchemy.annotations.designs.patterns</code></p>
+
 <ul>
 <li><code>@BuilderPattern</code></li>
 <li><code>@FactoryPattern</code></li>
@@ -1021,11 +1032,11 @@ the classes.</p>
 <li><code>@FluidAPIPattern</code></li>
 <li><code>@SingletonPattern</code></li>
 <li><code>@ObserverPattern</code></li>
-<li><code>@FluidAPIPattern</code></li>
+<li><code>@StatePattern</code></li>
 </ul>
 
-<p>Some of these patterns require you to also document the role of each object in the pattern.
-For example, the Observer Pattern:</p>
+<h3>
+<a id="user-content-examples-1" class="anchor" href="#examples-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
 
 <div class="highlight highlight-source-java"><pre>
 @ObserverPattern(<span class="pl-c1">SUBJECT</span>)
@@ -1044,6 +1055,20 @@ For example, the Observer Pattern:</p>
     }
 }
 </pre></div>
+
+<h2>
+<a id="user-content-other-designs" class="anchor" href="#other-designs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Designs</h2>
+
+<p>These are not "Textbook" Design Patterns, but are still common and useful.</p>
+
+<p><code>tech.sirwellington.alchemy.annotations.designs</code></p>
+
+<ul>
+<li><code>@FluidAPIPattern</code></li>
+</ul>
+
+<p>Some of these patterns require you to also document the role of each object in the pattern.
+For example, the Observer Pattern:</p>
 
 <h1>
 <a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>

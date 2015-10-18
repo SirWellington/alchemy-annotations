@@ -41,6 +41,14 @@ To use, simply add the following maven dependency.
 
 ## Snapshot
 
+>First add the Snapshot Repository
+```xml
+<repository>
+	<id>ossrh</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+</repository>
+```
+
 ```xml
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
@@ -59,7 +67,7 @@ Documentation for arguments or fields.
 + `@NonNull` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
 + `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
 
-### Examples
+### Example Uses
 
 ```java
 class MyService
@@ -131,6 +139,8 @@ class PizzaStore
 ## Design Patterns
 Documents the Application or Use of Design Patterns. This allows others to know right away how objects relate.
 
+`tech.sirwellington.alchemy.annotations.designs.patterns`
+
 + `@BuilderPattern`
 + `@FactoryPattern`
 + `@AbstractFactoryPattern`
@@ -139,10 +149,9 @@ Documents the Application or Use of Design Patterns. This allows others to know 
 + `@FluidAPIPattern`
 + `@SingletonPattern`
 + `@ObserverPattern`
-+ `@FluidAPIPattern`
++ `@StatePattern`
 
-Some of these patterns require you to also document the role of each object in the pattern.
-For example, the Observer Pattern:
+### Examples
 
 ```java
 
@@ -163,6 +172,17 @@ class AppleFanboy implements AppleWatcher
 }
 
 ```
+
+## Other Designs
+These are not "Textbook" Design Patterns, but are still common and useful.
+
+`tech.sirwellington.alchemy.annotations.designs`
+
++ `@FluidAPIPattern`
+
+Some of these patterns require you to also document the role of each object in the pattern.
+For example, the Observer Pattern:
+
 
 # License
 
