@@ -172,6 +172,9 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 # Release Notes
 
+## 1.2
++ New Annotations
+	+ `@NonInstantiable`
 
 ## 1.1
 + New Annotations
