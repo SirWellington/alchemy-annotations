@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Strategy Pattern, explained
+ * Documents the application and use of the Strategy Pattern, explained
  * <a href="http://www.oodesign.com/strategy-pattern.html">here</a>.
  *
  * @see

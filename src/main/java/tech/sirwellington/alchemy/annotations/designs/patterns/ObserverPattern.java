@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application and use of the Builder Pattern.
+ * Documents the application and use of the Observer Pattern.
  *
  * @see
- * <a href="http://www.oodesign.com/builder-pattern.html">http://www.oodesign.com/builder-pattern.html</a>
+ * <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface BuilderPattern
+public @interface ObserverPattern
 {
 
     Role role();
@@ -38,22 +38,22 @@ public @interface BuilderPattern
     {
 
         /**
-         * Applied to the Builder, responsible for configuring and creating the product, for the
-         * Client.
+         * Applied to the Object being observed by others. This is also known as the "Topic".
          */
-        BUILDER,
+        SUBJECT,
         /**
-         * (optional) Applied to a concrete Builder. In some application of this pattern, the
-         * Builder is an interface, and implementations are captured separately.
+         * Applied to the Interface of the Observer interested in observing the Subject. This is
+         * also known as a Listener, or Subscriber.
          */
-        CONCRETE_BUILDER,
+        OBSERVER,
         /**
-         * Applied to an Object that is created by the Builder.
+         * Applied to an Object that implements the Observer interface, i.e. a Concrete Observer.Ï
          */
-        PRODUCT,
+        CONCRETE_OBSERVER,
         /**
-         * Applied to an Object or Class that knowingly uses the Builder Pattern.
+         * In some implementations, there is a broker between the Subject and its observers that
+         * manage state and connections.
          */
-        CLIENT
+        BROKER
     }
 }

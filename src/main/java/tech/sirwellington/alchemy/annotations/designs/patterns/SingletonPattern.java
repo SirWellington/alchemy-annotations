@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Used to document the application or use of the Fluid API Style, explained
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
+ * Documents a Class that uses the Singleton Design Pattern.
  *
  * @see
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
+ * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
+ *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface FluidAPIPattern
+public @interface SingletonPattern
 {
 
 }

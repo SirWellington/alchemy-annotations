@@ -13,23 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.patterns;
+package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
 import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
 
 /**
- * Use to document the application and use of the Factory Pattern.
+ * Documents the application and use of the Abstract Factory Pattern, explained
+ * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
  *
  * @see
- * <a href="http://www.oodesign.com/factory-pattern.html">http://www.oodesign.com/factory-pattern.html</a>
+ * <a href="http://www.oodesign.com/abstract-factory-pattern.html">http://www.oodesign.com/abstract-factory-pattern.html</a>
+ * @see
+ * <a href="https://sourcemaking.com/design_patterns/abstract_factory">https://sourcemaking.com/design_patterns/abstract_factory</a>
  *
  * @author SirWellington
  */
 @Documented
 @Target(TYPE)
-public @interface FactoryPattern
+public @interface AbstractFactoryPattern
 {
 
     Role role();
@@ -38,19 +41,23 @@ public @interface FactoryPattern
     {
 
         /**
+         * Applied to the Interface of the Factory, i.e. the Abstract Factory.
+         */
+        FACTORY,
+        /**
+         * Applied to a concrete implementation of the Factory.
+         */
+        CONCRETE_FACTORY,
+        /**
          * Applied to the Interface of the Product, i.e. the Abstract Product.
          */
         PRODUCT,
         /**
-         * Applied to a Concrete Product that implements the Product interface.
+         * Applied to a concrete Product.
          */
         CONCRETE_PRODUCT,
         /**
-         * Applied to the Factory Class. It's responsible for creating concrete products.
-         */
-        FACTORY,
-        /**
-         * Applied to a Class or Object that uses the Factory Pattern.Ï
+         * Applied to an Object or class which makes use of this pattern.
          */
         CLIENT
     }
