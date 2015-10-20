@@ -62,6 +62,10 @@ To use, simply add the following maven dependency.
 </dependency>
 ```
 
+# Javadocs
+## [Latest](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)
+
+
 # API
  Applying annotations is simple.
 
