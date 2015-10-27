@@ -1,13 +1,14 @@
 Alchemy Annotations
 ==============================================
 
-## "Write what you mean, mean what you write."
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png" width="200">
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
-# Purpose
+## "Write what you mean, mean what you write."
 
-Alchemy Annotations allow clearer documentation of intent of your code.
+# Purpose
+**Alchemy Annotations** allow clearer documentation of intent of your code.
 
 It can be used to document intent, expectations, behaviors, structure, and more.
 
@@ -20,15 +21,6 @@ It also allows us to more explicitly document intent and expectations, reducing 
 
 For example, by applying the `@StrategyPattern` annotation to a few classes, we know can more easily understand the
 relationship between them.
-
-# Requirements
-
-+ Java 8
-+ Maven
-
-
-# Building
-This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
 
 
 # Download
@@ -251,6 +243,16 @@ These are not "Textbook" Design Patterns, but are still common and useful.
 
 Some of these patterns require you to also document the role of each object in the pattern.
 For example, the Observer Pattern:
+
+
+# Requirements
+
++ Java 8
++ Maven
+
+
+# Building
+This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
 
 
 # Release Notes
