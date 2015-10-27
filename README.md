@@ -1,9 +1,9 @@
 Alchemy Annotations
 ==============================================
 
-## "Write what you mean, mean what you write."
-
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png" width="200">
+
+## "Write what you mean, mean what you write."
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
