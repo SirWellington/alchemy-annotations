@@ -16,11 +16,13 @@
 package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.Target;
+
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
-import java.lang.annotation.Target;
 
 /**
  * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
@@ -36,7 +38,7 @@ import java.lang.annotation.Target;
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE })
+@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD })
 public @interface ThreadUnsafe
 {
 
