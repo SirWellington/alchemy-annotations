@@ -16,10 +16,11 @@
 package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Retention;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
+
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Labels a Class as <b>non-instantiable</b>, meaning an Object of this type cannot be created. This
