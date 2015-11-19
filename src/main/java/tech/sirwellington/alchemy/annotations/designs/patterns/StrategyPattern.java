@@ -16,8 +16,11 @@
 package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Target;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
 
 /**
  * Documents the application and use of the Strategy Pattern, explained
@@ -29,7 +32,7 @@ import java.lang.annotation.Target;
  * @author SirWellington
  */
 @Documented
-@Target(TYPE)
+@Target({TYPE, FIELD, METHOD})
 public @interface StrategyPattern
 {
 
