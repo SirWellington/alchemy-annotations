@@ -1,3 +1,5 @@
+
+
 Alchemy Annotations
 ==============================================
 
@@ -7,6 +9,26 @@ Alchemy Annotations
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
+**Table of Contents**
+
+- [Purpose](#purpose)
+- [Why use this](#why-use-this)
+- [Download](#download)
+  - [Release](#release)
+  - [Snapshot](#snapshot)
+- [[Javadocs](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)](#javadocshttpwwwjavadociodoctechsirwellingtonalchemyalchemy-annotations)
+- [API](#api)
+  - [Access](#access)
+    - [Examples](#examples)
+      - [@Internal](#@internal)
+      - [@NonInstantiable](#@noninstantiable)
+  - [Arguments](#arguments)
+    - [Examples](#examples-1)
+      - [@NonEmpty](#@nonempty)
+      - [@Nullable](#@nullable)
+  - [Concurrency](#concurrency)
+    - [Examples](#examples-2)
+      - [@ThreadSafe](#@threadsafe)
 
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
@@ -273,6 +295,8 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 ## 1.0.0
 + Initial Release
+
+Table of Contents *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 # License
 
