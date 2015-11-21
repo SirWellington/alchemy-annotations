@@ -5,26 +5,22 @@
     <parent>
         <groupId>tech.sirwellington.alchemy</groupId>
         <artifactId>alchemy</artifactId>
-        <version>1.0</version>
+        <version>1.2</version>
     </parent>
 
     <artifactId>alchemy-annotations</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
-        The Alchemy Collection. Making Java fun again.
-    </description>
+        Part of the Alchemy collection.
 
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
+        Write what you mean, mean what you write.
+
+        Alchemy Annotations allow clearer documentation of intent of your code.
+    </description>
 
     <issueManagement>
         <system>GitHub Issues</system>

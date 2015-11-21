@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2015 SirWellington Tech.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,33 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.concurrency;
+package tech.sirwellington.alchemy.annotations.designs;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.CONSTRUCTOR;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
 
 /**
- * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
+ * Used to document the Step Machine Design.
  * <br>
- * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
- * <p>
- * Thread Unsafety means that  special precautions must be taken to handle concurrency issues while
- * using this object. 
- * 
- * @see ThreadUnsafe
- * @see Mutable
+ * Note: Documentation for this pattern is still in the works.
  * 
  * @author SirWellington
  */
 @Documented
-@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD })
-public @interface ThreadUnsafe
+@Target(TYPE)
+public @interface StepMachineDesign
 {
 
+    public static enum Role
+    {
+
+        MACHINE,
+        STEP,
+        CLIENT
+    }
 }

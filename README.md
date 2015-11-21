@@ -1,29 +1,27 @@
 Alchemy Annotations
 ==============================================
 
+[<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png" width="200">](https://github.com/SirWellington/alchemy)
+
+## "Write what you mean, mean what you write."
+
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
-# Purpose
 
-Contains annotations which allow Java Developers to more clearly document code.
-It can be used to document intent, expectations, behaviors, structure, and more.
+# Purpose
+**Alchemy Annotations** allow clearer documentation of intent of your code.
+
+It can be used to document design intent, expectations, behaviors, structure, and more.
 
 # Why use this
 
-It makes it much easier for other developers and architects to understand what is going on in the code base.
+It is much easier for other developers and architects to understand what is going on in the code base when they
+know what to look for, and what behavior to expect.
+
 It also allows us to more explicitly document intent and expectations, reducing the chance for human mistake.
 
 For example, by applying the `@StrategyPattern` annotation to a few classes, we know can more easily understand the
 relationship between them.
-
-# Requirements
-
-+ JDK 8
-+ Maven
-
-
-# Building
-This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
 
 
 # Download
@@ -35,7 +33,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.2</version>
+	<version>1.3</version>
 </dependency>
 ```
 
@@ -53,12 +51,13 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.4-SNAPSHOT</version>
 </dependency>
 ```
 
+# [Javadocs](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)
+
 # API
- Applying annotations is simple.
 
 ## Access
 `tech.sirwellington.alchemy.annotations.access`
@@ -239,18 +238,28 @@ These are not "Textbook" Design Patterns, but are still common and useful.
 `tech.sirwellington.alchemy.annotations.designs`
 
 + `@FluidAPIDesign`
++ `@StepMachineDesign`
 
 Some of these patterns require you to also document the role of each object in the pattern.
 For example, the Observer Pattern:
 
 
-# License
+# Requirements
 
-This Software is licensed under the Apache 2.0 License
++ Java 8
++ Maven
 
-http://www.apache.org/licenses/LICENSE-2.0
+
+# Building
+This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
+
 
 # Release Notes
+
+## 1.3
++ Annotation Target Updates
++ New Annotations
+	+ `@StepMachineDesign`
 
 ## 1.2
 + New Annotations
@@ -264,3 +273,9 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 ## 1.0.0
 + Initial Release
+
+# License
+
+This Software is licensed under the Apache 2.0 License
+
+http://www.apache.org/licenses/LICENSE-2.0
