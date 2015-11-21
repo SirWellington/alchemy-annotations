@@ -21,7 +21,10 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.TYPE;
 
 /**
- *
+ * Used to document the Step Machine Design.
+ * <br>
+ * Note: Documentation for this pattern is still in the works.
+ * 
  * @author SirWellington
  */
 @Documented

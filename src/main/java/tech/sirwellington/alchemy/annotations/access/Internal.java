@@ -17,26 +17,30 @@
 package tech.sirwellington.alchemy.annotations.access;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.TYPE;
-import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.CLASS;
-import java.lang.annotation.Target;
 
 /**
- * Labels Types or Code as intended for internal use only.
- * 
- * Developers should try not to use classes or functions tagged as {@link Internal},
+ * Labels Types or Code as intended for use only within its project.
+ * <p>
+ * + Used on a Class to indicate that its design was intended solely for internal use.
+ * <br>
+ * + Used on a Method or Function to indicate that it was designed for internal use.
+ * <p>
+ * Developers should not use anything tagged as {@link Internal},
  * unless they are coding within that project.
  * 
  * @author SirWellington
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
+@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Internal
 {
 
