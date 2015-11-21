@@ -11,7 +11,7 @@ Alchemy Annotations
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
 
-It can be used to document intent, expectations, behaviors, structure, and more.
+It can be used to document design intent, expectations, behaviors, structure, and more.
 
 # Why use this
 
@@ -33,7 +33,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.2</version>
+	<version>1.3</version>
 </dependency>
 ```
 
@@ -51,16 +51,13 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.4-SNAPSHOT</version>
 </dependency>
 ```
 
-# Javadocs
-## [Latest](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)
-
+# [Javadocs](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)
 
 # API
- Applying annotations is simple.
 
 ## Access
 `tech.sirwellington.alchemy.annotations.access`
@@ -241,6 +238,7 @@ These are not "Textbook" Design Patterns, but are still common and useful.
 `tech.sirwellington.alchemy.annotations.designs`
 
 + `@FluidAPIDesign`
++ `@StepMachineDesign`
 
 Some of these patterns require you to also document the role of each object in the pattern.
 For example, the Observer Pattern:
@@ -257,6 +255,11 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 
 # Release Notes
+
+## 1.3
++ Annotation Target Updates
++ New Annotations
+	+ `@StepMachineDesign`
 
 ## 1.2
 + New Annotations
