@@ -23,8 +23,9 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Labels a Class as <b>non-instantiable</b>, meaning an Object of this type cannot be created. This
- * is usually applied to static utility classes that house static functions.
+ * Labels a Class as <b>non-instantiable</b>, meaning an Object of this type cannot and should not be created.
+ * <br>
+ * This is usually applied to static utility classes that house static functions.
  *
  * @author SirWellington
  */
