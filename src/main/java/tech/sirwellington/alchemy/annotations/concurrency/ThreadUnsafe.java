@@ -16,6 +16,7 @@
 package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
@@ -23,6 +24,7 @@ import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
@@ -38,6 +40,7 @@ import static java.lang.annotation.ElementType.TYPE;
  * @author SirWellington
  */
 @Documented
+@Retention(CLASS)
 @Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD })
 public @interface ThreadUnsafe
 {

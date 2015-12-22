@@ -15,6 +15,13 @@
  */
 package tech.sirwellington.alchemy.annotations.designs.patterns;
 
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.CLASS;
+
 /**
  * Documents the Application or use of the State Pattern, explained
  * <a href="https://sourcemaking.com/design_patterns/state">here</a>.
@@ -27,6 +34,9 @@ package tech.sirwellington.alchemy.annotations.designs.patterns;
  *
  * @author SirWellington
  */
+@Documented
+@Retention(CLASS)
+@Target(TYPE)
 public @interface StatePattern
 {
 

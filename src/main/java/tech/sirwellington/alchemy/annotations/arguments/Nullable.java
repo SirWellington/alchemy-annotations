@@ -17,11 +17,14 @@
 package tech.sirwellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
-import java.lang.annotation.Target;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * Specifies that an argument or field <b> may be</b> {@code null},
@@ -31,6 +34,7 @@ import java.lang.annotation.Target;
  */
 @Documented
 @Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
+@Retention(CLASS)
 public @interface Nullable 
 {
 

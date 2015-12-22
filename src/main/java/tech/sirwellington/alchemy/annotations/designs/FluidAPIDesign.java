@@ -16,8 +16,11 @@
 package tech.sirwellington.alchemy.annotations.designs;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.TYPE;
+import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * Used to document the application or use of the Fluid API Style, explained
@@ -28,6 +31,7 @@ import java.lang.annotation.Target;
  * @author SirWellington
  */
 @Documented
+@Retention(CLASS)
 @Target(TYPE)
 public @interface FluidAPIDesign
 {
