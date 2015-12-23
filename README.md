@@ -7,6 +7,26 @@ Alchemy Annotations
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
+**Table of Contents**
+
+- [Purpose](#purpose)
+- [Why use this](#why-use-this)
+- [Download](#download)
+  - [Release](#release)
+  - [Snapshot](#snapshot)
+- [[Javadocs](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)](#javadocshttpwwwjavadociodoctechsirwellingtonalchemyalchemy-annotations)
+- [API](#api)
+  - [Access](#access)
+    - [Examples](#examples)
+      - [@Internal](#@internal)
+      - [@NonInstantiable](#@noninstantiable)
+  - [Arguments](#arguments)
+    - [Examples](#examples-1)
+      - [@NonEmpty](#@nonempty)
+      - [@Nullable](#@nullable)
+  - [Concurrency](#concurrency)
+    - [Examples](#examples-2)
+      - [@ThreadSafe](#@threadsafe)
 
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
@@ -33,7 +53,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.3</version>
+	<version>1.3.1</version>
 </dependency>
 ```
 
@@ -249,12 +269,15 @@ For example, the Observer Pattern:
 + Java 8
 + Maven
 
-
 # Building
 This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
 
 
 # Release Notes
+
+## 1.3.1
++ Added `@Pojo`
++ Dependency Updates
 
 ## 1.3
 + Annotation Target Updates
@@ -273,6 +296,8 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 ## 1.0.0
 + Initial Release
+
+Table of Contents *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 # License
 
