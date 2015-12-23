@@ -1,5 +1,3 @@
-
-
 Alchemy Annotations
 ==============================================
 
@@ -55,7 +53,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.3</version>
+	<version>1.3.1</version>
 </dependency>
 ```
 
@@ -271,12 +269,15 @@ For example, the Observer Pattern:
 + Java 8
 + Maven
 
-
 # Building
 This project builds with maven. Just run a `mvn clean install` to compile and install to your local maven repository
 
 
 # Release Notes
+
+## 1.3.1
++ Added `@Pojo`
++ Dependency Updates
 
 ## 1.3
 + Annotation Target Updates
