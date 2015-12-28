@@ -35,6 +35,8 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 public @interface StepMachineDesign
 {
 
+    Role role();
+    
     public static enum Role
     {
 
