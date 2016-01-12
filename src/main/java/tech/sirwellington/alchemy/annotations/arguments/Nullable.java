@@ -30,11 +30,14 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Specifies that an argument or field <b> may be</b> {@code null},
  * as it is considered an acceptable value.
  *
+ * @deprecated In favor of {@link Optional}.
+ * 
  * @author SirWellington
  */
 @Documented
 @Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
 @Retention(CLASS)
+@Deprecated
 public @interface Nullable 
 {
 
