@@ -23,7 +23,7 @@ Alchemy Annotations
   - [Arguments](#arguments)
     - [Examples](#examples-1)
       - [@NonEmpty](#@nonempty)
-      - [@Nullable](#@nullable)
+      - [@Optional](#@optional)
   - [Concurrency](#concurrency)
     - [Examples](#examples-2)
       - [@ThreadSafe](#@threadsafe)
@@ -115,7 +115,7 @@ public final class Strings
 ## Arguments
 Documentation for arguments or fields.
 
-+ `@Nullable` - Indicates that a parameter or field can be `null`. I.E., `null` is an acceptable value.
++ `@Optional` - Indicates that a parameter or field is optional, and can be `null`.
 + `@NonNull` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
 + `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
 
@@ -136,10 +136,10 @@ class MyService
 }
 
 ```
-#### @Nullable
+#### @Optional
 ```java
 
-public Pizza create(Bread bread, @Nullable List<Condiments> condiments)
+public Pizza create(Bread bread, @Optional List<Condiments> condiments)
 {
 	Pizza pizza = createPizza(bread);
 
