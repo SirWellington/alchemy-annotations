@@ -21,6 +21,7 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
+import static tech.sirwellington.alchemy.annotations.designs.StepMachineDesign.Role.NONE_SPECIFIED;
 
 /**
  * Used to document the Step Machine Design.
@@ -35,13 +36,14 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 public @interface StepMachineDesign
 {
 
-    Role role();
+    Role role() default NONE_SPECIFIED;
     
     public static enum Role
     {
 
         MACHINE,
         STEP,
-        CLIENT
+        CLIENT,
+        NONE_SPECIFIED
     }
 }
