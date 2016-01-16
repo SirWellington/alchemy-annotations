@@ -1,3 +1,5 @@
+
+
 Alchemy Annotations
 ==============================================
 
@@ -7,9 +9,15 @@ Alchemy Annotations
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
 
+# Purpose
+**Alchemy Annotations** allow clearer documentation of intent of your code.
+
+It can be used to document design intent, expectations, behaviors, structure, and more.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Purpose](#purpose)
 - [Why use this](#why-use-this)
 - [Download](#download)
   - [Release](#release)
@@ -28,10 +36,7 @@ Alchemy Annotations
     - [Examples](#examples-2)
       - [@ThreadSafe](#@threadsafe)
 
-# Purpose
-**Alchemy Annotations** allow clearer documentation of intent of your code.
-
-It can be used to document design intent, expectations, behaviors, structure, and more.
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Why use this
 
@@ -116,7 +121,7 @@ public final class Strings
 Documentation for arguments or fields.
 
 + `@Optional` - Indicates that a parameter or field is optional, and can be `null`.
-+ `@NonNull` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
++ `@Required` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
 + `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
 
 ### Examples
@@ -303,8 +308,6 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 ## 1.0.0
 + Initial Release
-
-Table of Contents *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 # License
 
