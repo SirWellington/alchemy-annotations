@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 SirWellington Tech.
+ * Copyright 2015 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,37 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.sirwellington.alchemy.annotations.designs;
+
+package tech.sirwellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
-import static tech.sirwellington.alchemy.annotations.designs.StepMachineDesign.Role.NONE_SPECIFIED;
 
 /**
- * Used to document the Step Machine Design.
- * <br>
- * Note: Documentation for this pattern is still in the works.
- * 
+ * Specifies that an argument or field is optional <b> may be</b> {@code null}.
+ *
  * @author SirWellington
  */
 @Documented
+@Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
 @Retention(CLASS)
-@Target(TYPE)
-public @interface StepMachineDesign
+public @interface Optional 
 {
 
-    Role role() default NONE_SPECIFIED;
-    
-    public static enum Role
-    {
-
-        MACHINE,
-        STEP,
-        CLIENT,
-        NONE_SPECIFIED
-    }
 }
