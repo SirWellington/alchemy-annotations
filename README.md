@@ -123,6 +123,7 @@ Documentation for arguments or fields.
 + `@Optional` - Indicates that a parameter or field is optional, and can be `null`.
 + `@Required` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
 + `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
++ `@Positive` - Indicates that a `Number` must be positive, or `> 0`.
 
 ### Examples
 
@@ -284,6 +285,7 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 + New Annotations
     + `@Required`
     + `@Optional`
+    + `@Positive`
 + Deprecating `@Nullable` and `@NonNull`
 + Adding optional `Role` to `@StepMachineDesign`
 
