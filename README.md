@@ -16,7 +16,7 @@ It can be used to document design intent, expectations, behaviors, structure, an
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+
 
 - [Why use this](#why-use-this)
 - [Download](#download)
