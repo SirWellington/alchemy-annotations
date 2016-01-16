@@ -3,7 +3,7 @@
 Alchemy Annotations
 ==============================================
 
-[<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png" width="200">](https://github.com/SirWellington/alchemy)
+[<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7-name.png" width="200">](https://github.com/SirWellington/alchemy)
 
 ## "Write what you mean, mean what you write."
 
@@ -16,7 +16,7 @@ It can be used to document design intent, expectations, behaviors, structure, an
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+
 
 - [Why use this](#why-use-this)
 - [Download](#download)
@@ -123,6 +123,7 @@ Documentation for arguments or fields.
 + `@Optional` - Indicates that a parameter or field is optional, and can be `null`.
 + `@Required` - Indicates that a parameter or field that should never be `null`. I.E., it's an error condition if it is `null`.
 + `@NonEmpty` - Indicates that `String`, `Array`, `Collection`, or similar type should never be empty.
++ `@Positive` - Indicates that a `Number` must be positive, or `> 0`.
 
 ### Examples
 
@@ -284,6 +285,7 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 + New Annotations
     + `@Required`
     + `@Optional`
+    + `@Positive`
 + Deprecating `@Nullable` and `@NonNull`
 + Adding optional `Role` to `@StepMachineDesign`
 
