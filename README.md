@@ -275,6 +275,13 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 # Release Notes
 
+## 1.4
++ New Annotations
+    + `@Required`
+    + `@Optional`
++ Deprecating `@Nullable` and `@NonNull`
++ Adding optional `Role` to `@StepMachineDesign`
+
 ## 1.3.1
 + Added `@Pojo`
 + Dependency Updates
