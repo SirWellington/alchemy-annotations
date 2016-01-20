@@ -270,6 +270,12 @@ Some of these patterns require you to also document the role of each object in t
 For example, the Observer Pattern:
 
 
+## Testing Annotation
+These annotations help document certain aspects of Test Code.
+
++ `@IntegrationTest` - Tagged on Integration Test, to distinguish between a Unit Test
++ `@TimeSensitive` - Tagged on a Test or section of code that may fail processing is slow
+
 # Requirements
 
 + Java 8
