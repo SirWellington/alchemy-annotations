@@ -1,5 +1,3 @@
-
-
 Alchemy Annotations
 ==============================================
 
@@ -16,7 +14,7 @@ It can be used to document design intent, expectations, behaviors, structure, an
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
+**Table of Contents**
 
 - [Why use this](#why-use-this)
 - [Download](#download)
@@ -33,10 +31,28 @@ It can be used to document design intent, expectations, behaviors, structure, an
       - [@NonEmpty](#@nonempty)
       - [@Optional](#@optional)
   - [Concurrency](#concurrency)
-    - [Examples](#examples-2)
-      - [@ThreadSafe](#@threadsafe)
+    - [@ThreadSafe](#@threadsafe)
+    - [@ThreadUnsafe](#@threadunsafe)
+    - [@Mutable](#@mutable)
+    - [@Immutable](#@immutable)
+  - [Design Patterns](#design-patterns)
+    - [@ObserverPattern](#@observerpattern)
+  - [Notable Designs](#notable-designs)
+  - [Testing Annotation](#testing-annotation)
+- [Requirements](#requirements)
+- [Building](#building)
+- [Release Notes](#release-notes)
+  - [1.5](#15)
+  - [1.4](#14)
+  - [1.3.1](#131)
+  - [1.3](#13)
+  - [1.2](#12)
+  - [1.1](#11)
+  - [1.0.0](#100)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Why use this
 
@@ -58,7 +74,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.4</version>
+	<version>1.5</version>
 </dependency>
 ```
 
@@ -76,7 +92,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.6-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -165,9 +181,7 @@ Documentation for Concurrency concerns and concepts.
 + `@Mutable` - Labels an Object or variable as Mutable, meaning that its state **can** change once set.
 + `@Immutable` - Labels an Object or variable as Immutable, meaning that its state **cannot** change once set.
 
-### Examples
-
-#### @ThreadSafe
+### @ThreadSafe
 
 ```java
 @ThreadSafe
@@ -178,8 +192,9 @@ class PizzaFactory
 		return new Pizza("Tasty!");
 	}
 }
+```
 
-#### @ThreadUnsafe
+### @ThreadUnsafe
 
 ```java
 @ThreadUnsafe
@@ -196,7 +211,7 @@ class PizzaStore
 	}
 }
 ```
-#### @Mutable
+### @Mutable
 
 ```java
 @Mutable
@@ -207,7 +222,7 @@ class Store
 }
 ```
 
-#### @Immutable
+### @Immutable
 
 ```java
 class Store
@@ -234,10 +249,7 @@ Documents the Application or Use of Design Patterns. This allows others to know 
 + `@ObserverPattern`
 + `@StatePattern`
 
-### Examples
-
-
-#### @ObserverPattern
+### @ObserverPattern
 
 ```java
 @ObserverPattern(role = SUBJECT)
@@ -258,7 +270,7 @@ class AppleFanboy implements AppleWatcher
 
 ```
 
-## Other Designs
+## Notable Designs
 These are not "Textbook" Design Patterns, but are still common and useful.
 
 `tech.sirwellington.alchemy.annotations.designs`
@@ -270,6 +282,12 @@ Some of these patterns require you to also document the role of each object in t
 For example, the Observer Pattern:
 
 
+## Testing Annotation
+These annotations help document certain aspects of Test Code.
+
++ `@IntegrationTest` - Tagged on Integration Test, to distinguish between a Unit Test
++ `@TimeSensitive` - Tagged on a Test or section of code that may fail processing is slow
+
 # Requirements
 
 + Java 8
@@ -280,6 +298,12 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 
 # Release Notes
+
+## 1.5
++ New Annotations
+    + `@TimeSensitive`
+    + `@NetworkSensitive`
+    + `@IntegrationTest`
 
 ## 1.4
 + New Annotations

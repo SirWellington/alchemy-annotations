@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>alchemy-annotations</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
