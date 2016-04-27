@@ -5,7 +5,7 @@ Alchemy Annotations
 
 ## "Write what you mean, mean what you write."
 
-[![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
+[![Build Status](http://jenkins.redroma.tech/job/Alchemy%20Annotations/badge/icon)](http://jenkins.redroma.tech/job/Alchemy%20Annotations/)
 
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
