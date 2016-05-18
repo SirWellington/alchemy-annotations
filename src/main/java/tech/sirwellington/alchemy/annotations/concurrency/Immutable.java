@@ -22,11 +22,12 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Used on a class to indicate that it was designed to be immutable.
+ * + Used on a class or variable to indicate that it was designed to be immutable.
  * <br>
  * + Used on a variable to indicate that it is expected be {@code final} and immutable.
  * <p>
@@ -38,7 +39,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE })
+@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Immutable
 {
 
