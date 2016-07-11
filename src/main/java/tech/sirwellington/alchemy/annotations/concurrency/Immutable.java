@@ -27,7 +27,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Used on a class or variable to indicate that it was designed to be immutable.
+ * + Marks a class or variable to indicate that it was designed to be immutable.
  * <br>
  * + Used on a variable to indicate that it is expected be {@code final} and immutable.
  * <p>
