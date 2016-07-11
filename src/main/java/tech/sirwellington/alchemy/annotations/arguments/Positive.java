@@ -27,8 +27,7 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Specifies that a Number argument or field <b>must be </b> {@code > 0}.
- *
+ * Marks an argument or field as a {@link Number} that <b>must be {@code > 0}</b>.
  * 
  * @author SirWellington
  */
