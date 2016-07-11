@@ -27,8 +27,8 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Specifies that an argument or field <b> may be</b> {@code null},
- * as it is considered an acceptable value.
+ * Marks an argument or field as something that <b> may be{@code null}</b>.
+ * It is also a way of saying that {@code Null} is an acceptable argument.
  *
  * @deprecated In favor of {@link Optional}.
  * 
