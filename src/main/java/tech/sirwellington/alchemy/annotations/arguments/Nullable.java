@@ -28,7 +28,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * Marks an argument or field as something that <b> may be{@code null}</b>.
- * It is also a way of saying that {@code Null} is an acceptable argument.
+ * It is also a way of saying that {@code null} is an acceptable argument.
  *
  * @deprecated In favor of {@link Optional}.
  * 

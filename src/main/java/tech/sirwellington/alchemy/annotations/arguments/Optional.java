@@ -27,7 +27,8 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Specifies that an argument or field is optional <b> may be</b> {@code null}.
+ * Marks an argument or field as something that <b> may be{@code null}</b>.
+ * It is also a way of saying that {@code null} is an acceptable argument.
  *
  * @author SirWellington
  */
