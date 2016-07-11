@@ -27,9 +27,10 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Used on a class or variable to indicate that is not designed designed to be immutable.
- * <br>
- * + Used on a variable to indicate that it <b>should be</b> mutable. That is, its underlying can
+ * + Marks a class or variable to indicate that is not designed as immutable, meaning that its state 
+ * can be changed once initialized.
+ * <p>
+ * + Used on a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
  * still be changed once set.
  *
  * @see Immutable
