@@ -15,6 +15,6 @@
  */
 
 /**
- * Annotations for documenting expectations about access to data or functionality.
+ * Annotations about access to classes, data, or functionality.
  */
 package tech.sirwellington.alchemy.annotations.access;
