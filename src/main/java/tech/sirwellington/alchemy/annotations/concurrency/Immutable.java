@@ -29,7 +29,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 /**
  * + Marks a class or variable to indicate that it was designed to be immutable.
  * <p>
- * + Used on a variable to indicate that it is expected be {@code final} and immutable.
+ * + Marks a variable to indicate that it is expected be {@code final} and immutable.
  * <p><p>
  * Once it is created and set, it's underlying state <b>should not</b> be changed.
  *

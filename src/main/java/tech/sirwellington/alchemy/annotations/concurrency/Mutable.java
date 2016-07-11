@@ -30,7 +30,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * + Marks a class or variable to indicate that is not designed as immutable, meaning that its state 
  * can be changed once initialized.
  * <p>
- * + Used on a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
+ * + Marks a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
  * still be changed once set.
  *
  * @see Immutable
