@@ -27,7 +27,7 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Labels an argument or field <b> should not</b> be {@code null}.
+ * Marks an argument or field as something that <b>should not be {@code null}</b>.
  *
  * @see Nullable
  * @see NonEmpty
