@@ -25,7 +25,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Strategy Pattern, explained
+ * Declares the use of the Strategy Pattern, explained
  * <a href="http://www.oodesign.com/strategy-pattern.html">here</a>.
  *
  * @see
