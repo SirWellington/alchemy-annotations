@@ -28,11 +28,11 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
- * <br>
- * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
  * <p>
- * Thread Unsafety means that  special precautions must be taken to handle concurrency issues while
- * using this object. 
+ * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
+ * <p><p>
+ * 
+ * An Object that is Thread Unsafe requires special precautions when used concurrently.
  * 
  * @see ThreadUnsafe
  * @see Mutable

@@ -31,6 +31,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * <p>
  * + Marks a variable to indicate that it is expected to be Thread-Safe.
  * <p><p>
+ * 
  * Thread Safety means that no special precautions must be taken to handle concurrency issues for clients
  * using this object. Thread-Safe Objects are usually immutable or handle synchronization internally.
  *
