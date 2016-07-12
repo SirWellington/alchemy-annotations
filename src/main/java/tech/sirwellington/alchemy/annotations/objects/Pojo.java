@@ -27,9 +27,11 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
 /**
- * Describes an Object which is designed only to hold Objects.
+ * Declares a Class or Object that is designed to only contain data.
+ * <p>
  * In some circles this is known as a Java Bean.
  * The idea is that only {@code getters/setters/toString()/equals()/hashCode()} are provided.
+ * 
  * @author SirWellington
  */
 @Documented
