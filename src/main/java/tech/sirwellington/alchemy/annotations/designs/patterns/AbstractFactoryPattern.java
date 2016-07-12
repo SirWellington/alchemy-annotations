@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Abstract Factory Pattern, explained
+ * Declares the use of the Abstract Factory Pattern. This pattern is explained
  * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
  *
  * @see
