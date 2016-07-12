@@ -45,7 +45,7 @@ public @interface AbstractFactoryPattern
     {
 
         /**
-         * Applied to the interface of the Factory, i.e. the Abstract Factory.
+         * Applied to the Interface of the Factory, i.e. the Abstract Factory.
          */
         FACTORY,
         /**
@@ -53,7 +53,7 @@ public @interface AbstractFactoryPattern
          */
         CONCRETE_FACTORY,
         /**
-         * Applied to the interface of the Product, i.e. the Abstract Product.
+         * Applied to the Interface of the Product, i.e. the Abstract Product.
          */
         PRODUCT,
         /**

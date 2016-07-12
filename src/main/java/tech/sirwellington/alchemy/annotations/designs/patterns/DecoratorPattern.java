@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Decorator Pattern, explained
+ * Declares use of the Decorator Pattern, explained
  * <a href="http://www.oodesign.com/decorator-pattern.html">here</a>.
  *
  * @see

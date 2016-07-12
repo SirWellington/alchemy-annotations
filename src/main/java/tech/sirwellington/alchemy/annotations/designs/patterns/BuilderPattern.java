@@ -49,7 +49,7 @@ public @interface BuilderPattern
         BUILDER,
         /**
          * (optional) Applied to a concrete Builder. In some application of this pattern, the
-         * Builder is an interface, and implementations are captured separately.
+         * Builder is an Interface, and implementations are captured separately.
          */
         CONCRETE_BUILDER,
         /**
