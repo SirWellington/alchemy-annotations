@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the Application or use of the State Pattern, explained
+ * Declares the use of the State Pattern, explained
  * <a href="https://sourcemaking.com/design_patterns/state">here</a>.
  *
  * @see
