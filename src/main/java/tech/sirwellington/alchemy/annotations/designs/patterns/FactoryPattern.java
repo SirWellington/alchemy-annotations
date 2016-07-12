@@ -23,7 +23,8 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Factory Pattern.
+ * Declares the use of the Factory Pattern.
+ * This pattern is described <a href="http://www.oodesign.com/factory-pattern.html">here</a>.
  *
  * @see
  * <a href="http://www.oodesign.com/factory-pattern.html">http://www.oodesign.com/factory-pattern.html</a>
