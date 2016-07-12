@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents a Class that uses the Singleton Design Pattern.
+ * Declares the use of the Singleton Design Pattern.
  *
  * @see
  * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
