@@ -23,7 +23,8 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Builder Pattern.
+ * Declares the use of the Builder Pattern.
+ * This pattern is explained <a href="http://www.oodesign.com/builder-pattern.html">here</a>.
  *
  * @see
  * <a href="http://www.oodesign.com/builder-pattern.html">http://www.oodesign.com/builder-pattern.html</a>
