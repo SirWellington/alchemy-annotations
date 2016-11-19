@@ -1,11 +1,11 @@
 Alchemy Annotations
 ==============================================
 
-[<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7-name.png" width="200">](https://github.com/SirWellington/alchemy)
+[<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7-name.png" width="500">](https://github.com/SirWellington/alchemy)
 
 ## "Write what you mean, mean what you write."
 
-[![Build Status](https://travis-ci.org/SirWellington/alchemy-annotations.svg)](https://travis-ci.org/SirWellington/alchemy-annotations)
+[![Build Status](http://jenkins.redroma.tech/job/Alchemy%20Annotations/badge/icon)](http://jenkins.redroma.tech/job/Alchemy%20Annotations/)
 
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
@@ -74,7 +74,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.5</version>
+	<version>1.6</version>
 </dependency>
 ```
 
@@ -92,7 +92,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<version>1.7-SNAPSHOT</version>
 </dependency>
 ```
 

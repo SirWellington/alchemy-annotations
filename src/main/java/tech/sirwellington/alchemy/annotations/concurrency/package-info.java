@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,6 @@
  */
 
 /**
- * Annotations about Concurrency.
+ * Annotations about concurrency and multi-threaded applications.
  */
 package tech.sirwellington.alchemy.annotations.concurrency;

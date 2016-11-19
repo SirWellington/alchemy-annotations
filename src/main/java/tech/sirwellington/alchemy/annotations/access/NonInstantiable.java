@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 SirWellington Tech.
+ * Copyright 2016 SirWellington Tech.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,8 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Labels a Class as <b>non-instantiable</b>, meaning an Object of this type cannot and should not be created.
- * <br>
+ * Marks a Class as <b>non-instantiable</b>, meaning an Object of this type cannot and should not be created.
+ * <p>
  * This is usually applied to static utility classes that house static functions.
  *
  * @author SirWellington

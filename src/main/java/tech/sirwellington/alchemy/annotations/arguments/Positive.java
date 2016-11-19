@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,8 +27,7 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Specifies that a Number argument or field <b>must be </b> {@code > 0}.
- *
+ * Marks an argument or field as a {@link Number} that <b>must be {@code > 0}</b>.
  * 
  * @author SirWellington
  */

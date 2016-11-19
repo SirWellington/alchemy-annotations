@@ -5,20 +5,18 @@
     <parent>
         <groupId>tech.sirwellington.alchemy</groupId>
         <artifactId>alchemy</artifactId>
-        <version>1.4</version>
+        <version>1.6</version>
     </parent>
 
     <artifactId>alchemy-annotations</artifactId>
-    <version>1.5</version>
+    <version>1.6</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
     <url>https://github.com/SirWellington/alchemy-annotations</url>
     <description>
-        Part of the Alchemy collection.
-
+        Alchemy; making Java fun again.
         Write what you mean, mean what you write.
-
         Alchemy Annotations allow clearer documentation of intent of your code.
     </description>
 

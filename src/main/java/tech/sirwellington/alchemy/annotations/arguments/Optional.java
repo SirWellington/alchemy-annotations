@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ package tech.sirwellington.alchemy.annotations.arguments;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+import java.util.Collection;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
@@ -27,8 +28,17 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Specifies that an argument or field is optional <b> may be</b> {@code null}.
+ * Marks an argument or field as something that <b> may be{@code null}</b>.
+ * It is also a way of saying that:
+ * <p>
+ * + {@code null} is an acceptable argument.
+ * <br>
+ * + An empty {@link Collection} is an acceptable argument.
+ * <br>
+ * + An empty {@link String} is an acceptable argument.
  *
+ * @see Required
+ * 
  * @author SirWellington
  */
 @Documented

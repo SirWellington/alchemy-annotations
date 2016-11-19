@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,8 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Builder Pattern.
+ * Declares the use of the Builder Pattern.
+ * This pattern is explained <a href="http://www.oodesign.com/builder-pattern.html">here</a>.
  *
  * @see
  * <a href="http://www.oodesign.com/builder-pattern.html">http://www.oodesign.com/builder-pattern.html</a>
@@ -48,7 +49,7 @@ public @interface BuilderPattern
         BUILDER,
         /**
          * (optional) Applied to a concrete Builder. In some application of this pattern, the
-         * Builder is an interface, and implementations are captured separately.
+         * Builder is an Interface, and implementations are captured separately.
          */
         CONCRETE_BUILDER,
         /**

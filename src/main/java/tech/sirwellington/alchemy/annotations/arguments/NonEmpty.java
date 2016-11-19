@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,17 +17,26 @@
 package tech.sirwellington.alchemy.annotations.arguments;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.PARAMETER;
 import java.lang.annotation.Retention;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
 import java.util.Collection;
 
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
 /**
- * Labels an argument or field <b> should not</b> be {@code null} or empty. This applies to
- * {@linkplain String Strings}, {@code Arrays}, and {@link Collection Collections}.
+ * Marks an argument or field <b> should not</b> be {@code null} or empty. 
+ * <p>
+ * This is usually applied to:
+ * <p>
+ * + {@linkplain String Strings},
+ * <br>
+ * + {@code Arrays}
+ * <br>
+ * + {@linkplain Collection Collections}.
+ * <p>
  *
  * @see NonNull
  * @author SirWellington

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,17 +17,20 @@
 package tech.sirwellington.alchemy.annotations.concurrency;
 
 import java.lang.annotation.Documented;
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
-import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Retention;
-import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Target;
 
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.CLASS;
+
 /**
- * + Used on a class to indicate that is not designed designed to be immutable.
- * <br>
- * + Used on a variable to indicate that it <b>should be</b> mutable. That is, its underlying can
+ * + Marks a class or variable to indicate that is not designed as immutable, meaning that its state 
+ * can be changed once initialized.
+ * <p>
+ * + Marks a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
  * still be changed once set.
  *
  * @see Immutable
@@ -36,7 +39,7 @@ import java.lang.annotation.Target;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE })
+@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Mutable
 {
 

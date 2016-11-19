@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,14 +22,15 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
+import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Used on a class to indicate that it was designed to be immutable.
- * <br>
- * + Used on a variable to indicate that it is expected be {@code final} and immutable.
+ * + Marks a class or variable to indicate that it was designed to be immutable.
  * <p>
+ * + Marks a variable to indicate that it is expected be {@code final} and immutable.
+ * <p><p>
  * Once it is created and set, it's underlying state <b>should not</b> be changed.
  *
  * @see Mutable
@@ -38,7 +39,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE })
+@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
 public @interface Immutable
 {
 

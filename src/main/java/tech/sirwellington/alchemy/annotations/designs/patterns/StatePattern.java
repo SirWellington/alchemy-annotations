@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 SirWellington Tech.
+ * Copyright 2016 SirWellington Tech.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the Application or use of the State Pattern, explained
+ * Declares the use of the State Pattern, explained
  * <a href="https://sourcemaking.com/design_patterns/state">here</a>.
  *
  * @see

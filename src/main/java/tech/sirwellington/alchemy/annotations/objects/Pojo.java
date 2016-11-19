@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 SirWellington Tech.
+ * Copyright 2016 SirWellington Tech.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,9 +27,11 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
 /**
- * Describes an Object which is designed only to hold Objects.
+ * Declares a Class or Object that is designed to only contain data.
+ * <p>
  * In some circles this is known as a Java Bean.
  * The idea is that only {@code getters/setters/toString()/equals()/hashCode()} are provided.
+ * 
  * @author SirWellington
  */
 @Documented

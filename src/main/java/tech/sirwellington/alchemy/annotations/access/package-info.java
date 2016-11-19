@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,6 @@
  */
 
 /**
- * Annotations for documenting expectations about access to data or functionality.
+ * Annotations about access to classes, data, or functionality.
  */
 package tech.sirwellington.alchemy.annotations.access;

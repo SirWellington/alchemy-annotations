@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Abstract Factory Pattern, explained
+ * Declares the use of the Abstract Factory Pattern. This pattern is explained
  * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
  *
  * @see

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Sir Wellington.
+ * Copyright 2016 Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,9 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Documents the application and use of the Observer Pattern.
- *
+ * Declares the use of the Observer Pattern.
+ * This pattern is described <a href="http://www.oodesign.com/observer-pattern.html">here</a>.
+ * 
  * @see
  * <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
  *
@@ -51,7 +52,7 @@ public @interface ObserverPattern
          */
         OBSERVER,
         /**
-         * Applied to an Object that implements the Observer interface, i.e. a Concrete Observer.Ï
+         * Applied to an Object that implements the Observer Interface, i.e. a Concrete Observer.Ï
          */
         CONCRETE_OBSERVER,
         /**
