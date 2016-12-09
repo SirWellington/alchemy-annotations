@@ -6,6 +6,7 @@ Alchemy Annotations
 ## "Write what you mean, mean what you write."
 
 [![Build Status](http://jenkins.redroma.tech/job/Alchemy%20Annotations/badge/icon)](http://jenkins.redroma.tech/job/Alchemy%20Annotations/)
+![Maven Central Version](http://img.shields.io/maven-central/v/tech.sirwellington.alchemy/alchemy-annotations.svg)
 
 # Purpose
 **Alchemy Annotations** allow clearer documentation of intent of your code.
