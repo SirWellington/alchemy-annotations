@@ -21,11 +21,11 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * Declares the use of the Factory Pattern.
- * This pattern is described <a href="http://www.oodesign.com/factory-pattern.html">here</a>.
+ * Declares the use of the Factory Method.
+ * This pattern is described <a href="http://www.oodesign.com/factory-method-pattern.html">here</a>.
  *
  * @see
- * <a href="http://www.oodesign.com/factory-pattern.html">http://www.oodesign.com/factory-pattern.html</a>
+ * <a href="http://www.oodesign.com/factory-method-pattern.html">http://www.oodesign.com/factory-method-pattern.html</a>
  *
  * @author SirWellington
  */
