@@ -32,7 +32,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface FactoryMethod
+public @interface FactoryMethodPattern
 {
 
     Role role();
