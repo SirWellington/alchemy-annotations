@@ -13,48 +13,6 @@ Alchemy Annotations
 
 It can be used to document design intent, expectations, behaviors, structure, and more.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Why use this](#why-use-this)
-- [Download](#download)
-  - [Release](#release)
-  - [Snapshot](#snapshot)
-- [[Javadocs](http://www.javadoc.io/doc/tech.sirwellington.alchemy/alchemy-annotations/)](#javadocshttpwwwjavadociodoctechsirwellingtonalchemyalchemy-annotations)
-- [API](#api)
-  - [Access](#access)
-    - [Examples](#examples)
-      - [@Internal](#@internal)
-      - [@NonInstantiable](#@noninstantiable)
-  - [Arguments](#arguments)
-    - [Examples](#examples-1)
-      - [@NonEmpty](#@nonempty)
-      - [@Optional](#@optional)
-  - [Concurrency](#concurrency)
-    - [@ThreadSafe](#@threadsafe)
-    - [@ThreadUnsafe](#@threadunsafe)
-    - [@Mutable](#@mutable)
-    - [@Immutable](#@immutable)
-  - [Design Patterns](#design-patterns)
-    - [@ObserverPattern](#@observerpattern)
-  - [Notable Designs](#notable-designs)
-  - [Testing Annotation](#testing-annotation)
-- [Requirements](#requirements)
-- [Building](#building)
-- [Release Notes](#release-notes)
-  - [1.5](#15)
-  - [1.4](#14)
-  - [1.3.1](#131)
-  - [1.3](#13)
-  - [1.2](#12)
-  - [1.1](#11)
-  - [1.0.0](#100)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-
 # Why use this
 
 It is much easier for other developers and architects to understand what is going on in the code base when they
@@ -75,7 +33,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>2.0</version>
+	<version>2.1</version>
 </dependency>
 ```
 
@@ -93,7 +51,7 @@ To use, simply add the following maven dependency.
 <dependency>
 	<groupId>tech.sirwellington.alchemy</groupId>
 	<artifactId>alchemy-annotations</artifactId>
-	<version>2.1-SNAPSHOT</version>
+	<version>2.2-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -299,6 +257,11 @@ This project builds with maven. Just run a `mvn clean install` to compile and in
 
 
 # Release Notes
+
+## 2.0
++ New Design Pattern Annotations
+    + `@FacadePattern`
+    + `@FactoryMethodPattern`
 
 ## 1.5
 + New Annotations
