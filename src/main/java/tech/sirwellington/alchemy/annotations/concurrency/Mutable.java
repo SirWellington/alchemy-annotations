@@ -1,10 +1,10 @@
 /*
- * Copyright 2016 Sir Wellington.
+ * Copyright © 2018.  Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
  *
+ * You may obtain a copy of the License at
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -27,14 +27,14 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Marks a class or variable to indicate that is not designed as immutable, meaning that its state 
+ * + Marks a class or variable to indicate that is not designed as immutable, meaning that its state
  * can be changed once initialized.
  * <p>
  * + Marks a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
  * still be changed once set.
  *
  * @see Immutable
- * 
+ *
  * @author SirWellington
  */
 @Documented

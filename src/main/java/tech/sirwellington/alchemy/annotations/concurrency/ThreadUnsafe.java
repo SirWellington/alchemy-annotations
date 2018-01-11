@@ -1,10 +1,10 @@
 /*
- * Copyright 2016 Sir Wellington.
+ * Copyright © 2018.  Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
  *
+ * You may obtain a copy of the License at
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -27,16 +27,16 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
- * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe. 
+ * + Used on a class to indicate that it is <b>not</b> designed to be Thread-Safe.
  * <p>
  * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
  * <p><p>
- * 
+ *
  * An Object that is Thread Unsafe requires special precautions when used concurrently.
- * 
+ *
  * @see ThreadUnsafe
  * @see Mutable
- * 
+ *
  * @author SirWellington
  */
 @Documented

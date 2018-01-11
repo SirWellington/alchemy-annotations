@@ -1,10 +1,10 @@
 /*
- * Copyright 2016 SirWellington Tech.
+ * Copyright © 2018.  Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
  *
+ * You may obtain a copy of the License at
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
- 
+
 package tech.sirwellington.alchemy.annotations.testing;
 
 import java.lang.annotation.Documented;
@@ -31,13 +31,13 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 /**
  * Notes that an Operation is sensitive to clock time, and that it may
  * fail if operating conditions are unusually slow.
- * 
+ *
  * @author SirWellington
  */
 @Documented
 @Retention(CLASS)
 @Target({ TYPE, FIELD, METHOD })
-public @interface TimeSensitive 
+public @interface TimeSensitive
 {
 
 }

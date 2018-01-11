@@ -1,10 +1,10 @@
 /*
- * Copyright 2016 Aroma Tech.
+ * Copyright © 2018.  Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
  *
+ * You may obtain a copy of the License at
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
- 
+
 package tech.sirwellington.alchemy.annotations.testing;
 
 
@@ -31,13 +31,13 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 /**
  * Notes that an Operation is sensitive to the Network. This could mean the availability of the network,
  * or of services on the Network.
- * 
+ *
  * @author SirWellington
  */
 @Documented
 @Retention(CLASS)
 @Target({ TYPE, FIELD, METHOD })
-public @interface NetworkSensitive 
+public @interface NetworkSensitive
 {
 
 }

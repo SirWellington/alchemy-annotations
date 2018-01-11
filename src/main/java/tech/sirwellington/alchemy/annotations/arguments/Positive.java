@@ -1,10 +1,10 @@
 /*
- * Copyright 2016 Sir Wellington.
+ * Copyright © 2018.  Sir Wellington.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
  *
+ * You may obtain a copy of the License at
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -28,7 +28,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 
 /**
  * Marks an argument or field as a {@link Number} that <b>must be {@code > 0}</b>.
- * 
+ *
  * @author SirWellington
  */
 @Documented
