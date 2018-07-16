@@ -18,7 +18,7 @@ package tech.sirwellington.alchemy.annotations.objects;
 
 import java.lang.annotation.*;
 
-import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
@@ -33,7 +33,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target(TYPE)
+@Target({TYPE, METHOD, FIELD})
 public @interface Pojo
 {
 

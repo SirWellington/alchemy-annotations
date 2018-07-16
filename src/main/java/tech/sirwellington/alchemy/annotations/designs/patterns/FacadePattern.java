@@ -17,6 +17,8 @@ package tech.sirwellington.alchemy.annotations.designs.patterns;
 
 import java.lang.annotation.*;
 
+import static java.lang.annotation.ElementType.*;
+
 /**
  * Declares use of the Facade Pattern, explained
  * <a href="http://www.oodesign.com/facade-pattern.html">here</a>.
@@ -27,7 +29,7 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.CLASS)
-@Target(ElementType.TYPE)
+@Target({TYPE, METHOD, FIELD})
 public @interface FacadePattern
 {
     Role role() default Role.UMBRELLA;
