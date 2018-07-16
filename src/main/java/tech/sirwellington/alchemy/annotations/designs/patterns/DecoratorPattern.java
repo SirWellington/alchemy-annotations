@@ -33,7 +33,7 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({TYPE, METHOD, FIELD})
+@Target({TYPE, METHOD, FIELD, PARAMETER, CONSTRUCTOR})
 public @interface DecoratorPattern
 {
 
