@@ -36,7 +36,7 @@ public @interface BuilderPattern
 
     Role role();
 
-    public static enum Role
+    enum Role
     {
 
         /**
