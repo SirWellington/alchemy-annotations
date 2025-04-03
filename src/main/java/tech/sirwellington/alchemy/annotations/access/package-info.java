@@ -15,5 +15,7 @@
 
 /**
  * Annotations about access to classes, data, or functionality.
+ * 
+ * @author SirWellington
  */
 package tech.sirwellington.alchemy.annotations.access;

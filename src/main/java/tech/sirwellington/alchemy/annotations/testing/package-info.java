@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019. Sir Wellington.
+ * Copyright © 2025. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -14,11 +14,7 @@
  */
 
 /**
- * Annotations that document the application and use of Designs that are <b>not</b>
- * Textbook Design Patterns.
- *
- * @see tech.sirwellington.alchemy.annotations.designs.patterns
- * 
+ * Annotations for describing the nature of a test case or suite.
  * @author SirWellington
  */
-package tech.sirwellington.alchemy.annotations.designs;
+package tech.sirwellington.alchemy.annotations.testing;

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019. Sir Wellington.
+ * Copyright © 2025. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -13,26 +13,8 @@
  * limitations under the License.
  */
 
-package tech.sirwellington.alchemy.annotations.arguments;
-
-import java.lang.annotation.*;
-
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.CLASS;
-
 /**
- * Marks an argument or field as something that <b> may be{@code null}</b>.
- * It is also a way of saying that {@code null} is an acceptable argument.
- *
- * @deprecated In favor of {@link Optional}.
- *
+ * General annotations for describing objects.
  * @author SirWellington
  */
-@Documented
-@Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
-@Retention(CLASS)
-@Deprecated
-public @interface Nullable
-{
-
-}
+package tech.sirwellington.alchemy.annotations.objects;

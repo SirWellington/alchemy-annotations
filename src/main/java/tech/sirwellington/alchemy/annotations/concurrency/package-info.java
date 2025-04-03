@@ -15,5 +15,7 @@
 
 /**
  * Annotations about concurrency and multi-threaded applications.
+ * 
+ * @author SirWellington
  */
 package tech.sirwellington.alchemy.annotations.concurrency;

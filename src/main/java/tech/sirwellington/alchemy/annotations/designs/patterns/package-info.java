@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019. Sir Wellington.
+ * Copyright © 2025. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -20,5 +20,7 @@
  * <a href="https://en.wikipedia.org/wiki/Design_Patterns">https://en.wikipedia.org/wiki/Design_Patterns</a>
  * @see
  * <a href="http://www.oodesign.com">http://www.oodesign.com</a>
+ * 
+ * @author SirWellington
  */
 package tech.sirwellington.alchemy.annotations.designs.patterns;

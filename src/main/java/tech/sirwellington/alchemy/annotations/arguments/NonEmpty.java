@@ -33,7 +33,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * + {@linkplain Collection Collections}.
  * <p>
  *
- * @see NonNull
+ * @see Required
  * @author SirWellington
  */
 @Documented
