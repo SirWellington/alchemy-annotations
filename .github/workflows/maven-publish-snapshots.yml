@@ -17,7 +17,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 11
-          server-id: central
+          server-id: central-snapshots
           server-username: CENTRAL_USERNAME
           server-password: CENTRAL_TOKEN
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
@@ -32,7 +32,8 @@ jobs:
             maven-${{ runner.os }}-
 
       - name: Publish SNAPSHOT
-        run: mvn --batch-mode clean deploy -P release -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }}
+        run: mvn --batch-mode clean deploy -P release
         env:
           CENTRAL_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           CENTRAL_TOKEN: ${{ secrets.OSSRH_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
