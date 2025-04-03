@@ -62,5 +62,16 @@
     </properties>
 
     <!-- END OF POM METADATA -->
+    
+    <!--SNAPSHOTS-->
+    <repositories>
+        <repository>
+            <id>central-snapshots</id>
+            <url>https://central.sonatype.com/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
