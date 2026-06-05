@@ -50,10 +50,7 @@
     <inceptionYear>2015</inceptionYear>
 
     <properties>
-
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-
+        <maven.compiler.release>21</maven.compiler.release>
     </properties>
 
     <!-- END OF POM METADATA -->
