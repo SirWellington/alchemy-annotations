@@ -31,8 +31,5 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, METHOD })
-public @interface NetworkSensitive
-{
-
-}
+@Target({TYPE, FIELD, METHOD})
+public @interface NetworkSensitive { }

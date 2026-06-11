@@ -39,7 +39,4 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Retention(RUNTIME)
 @Target({ PARAMETER, FIELD, LOCAL_VARIABLE })
-public @interface NonEmpty
-{
-
-}
+public @interface NonEmpty { }

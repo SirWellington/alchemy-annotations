@@ -22,7 +22,6 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
-
 /**
  * Notes that an Operation is sensitive to clock time, and that it may
  * fail if operating conditions are unusually slow.
@@ -31,8 +30,5 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, METHOD })
-public @interface TimeSensitive
-{
-
-}
+@Target({TYPE, FIELD, METHOD})
+public @interface TimeSensitive { }

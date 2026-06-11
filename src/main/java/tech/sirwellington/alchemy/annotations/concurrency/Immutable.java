@@ -27,14 +27,10 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * <p><p>
  * Once it is created and set, it's underlying state <b>should not</b> be changed.
  *
- * @see Mutable
- *
  * @author SirWellington
+ * @see Mutable
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
-public @interface Immutable
-{
-
-}
+@Target({TYPE, FIELD, LOCAL_VARIABLE, METHOD})
+public @interface Immutable { }

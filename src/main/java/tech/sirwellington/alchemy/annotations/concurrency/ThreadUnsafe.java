@@ -24,18 +24,14 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * <p>
  * + Used on a variable to indicate that it is expected to <b>not</b> be Thread-Safe.
  * <p><p>
- *
+ * <p>
  * An Object that is Thread Unsafe requires special precautions when used concurrently.
  *
+ * @author SirWellington
  * @see ThreadUnsafe
  * @see Mutable
- *
- * @author SirWellington
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD })
-public @interface ThreadUnsafe
-{
-
-}
+@Target({TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD})
+public @interface ThreadUnsafe { }

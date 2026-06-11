@@ -23,15 +23,11 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Marks an argument or field as something that <b>should not be {@code null}</b>.
  *
+ * @author SirWellington
  * @see Optional
  * @see NonEmpty
- *
- * @author SirWellington
  */
 @Documented
 @Retention(RUNTIME)
 @Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface Required
-{
-
-}
+public @interface Required { }

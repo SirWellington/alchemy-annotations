@@ -39,7 +39,4 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Documented
 @Retention(CLASS)
 @Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
-public @interface Internal
-{
-
-}
+public @interface Internal { }

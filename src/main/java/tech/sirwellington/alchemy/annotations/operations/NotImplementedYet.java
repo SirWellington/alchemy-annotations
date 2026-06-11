@@ -28,8 +28,5 @@ import static java.lang.annotation.ElementType.*;
  */
 @Documented
 @Retention(RetentionPolicy.CLASS)
-@Target({ TYPE, FIELD, METHOD })
-public @interface NotImplementedYet
-{
-
-}
+@Target({TYPE, FIELD, METHOD})
+public @interface NotImplementedYet { }

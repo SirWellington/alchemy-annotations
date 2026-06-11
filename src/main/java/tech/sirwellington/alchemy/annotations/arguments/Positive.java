@@ -28,7 +28,4 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Documented
 @Target({ PARAMETER, FIELD, LOCAL_VARIABLE, METHOD })
 @Retention(CLASS)
-public @interface Positive
-{
-
-}
+public @interface Positive { }

@@ -22,7 +22,6 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
-
 /**
  * Declares a Class or Object that is designed to only contain data.
  * <p>
@@ -34,7 +33,4 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface Pojo
-{
-
-}
+public @interface Pojo { }

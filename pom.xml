@@ -25,7 +25,6 @@
     </parent>
 
     <artifactId>alchemy-annotations</artifactId>
-    <version>3.0-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
@@ -50,7 +49,7 @@
     <inceptionYear>2015</inceptionYear>
 
     <properties>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
     </properties>
 
     <!-- END OF POM METADATA -->
