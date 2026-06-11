@@ -23,24 +23,18 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Declares the use of the Abstract Factory Pattern. This pattern is explained
  * <a href="http://www.oodesign.com/abstract-factory-pattern.html">here</a>.
  *
- * @see
- * <a href="http://www.oodesign.com/abstract-factory-pattern.html">http://www.oodesign.com/abstract-factory-pattern.html</a>
- * @see
- * <a href="https://sourcemaking.com/design_patterns/abstract_factory">https://sourcemaking.com/design_patterns/abstract_factory</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/abstract-factory-pattern.html">http://www.oodesign.com/abstract-factory-pattern.html</a>
+ * @see <a href="https://sourcemaking.com/design_patterns/abstract_factory">https://sourcemaking.com/design_patterns/abstract_factory</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface AbstractFactoryPattern
-{
+public @interface AbstractFactoryPattern {
 
     Role role();
 
-    public static enum Role
-    {
-
+    public static enum Role {
         /**
          * Applied to the Interface of the Factory, i.e. the Abstract Factory.
          */

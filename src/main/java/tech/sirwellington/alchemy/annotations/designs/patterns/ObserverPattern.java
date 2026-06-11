@@ -23,21 +23,17 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Declares the use of the Observer Pattern.
  * This pattern is described <a href="http://www.oodesign.com/observer-pattern.html">here</a>.
  *
- * @see
- * <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/observer-pattern.html">http://www.oodesign.com/observer-pattern.html</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface ObserverPattern
-{
+public @interface ObserverPattern {
 
     Role role();
 
-    public static enum Role
-    {
+    public static enum Role {
 
         /**
          * Applied to the Object being observed by others. This is also known as the "Topic".

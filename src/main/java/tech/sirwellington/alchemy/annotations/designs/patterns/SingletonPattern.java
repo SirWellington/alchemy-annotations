@@ -22,15 +22,10 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 /**
  * Declares the use of the Singleton Design Pattern.
  *
- * @see
- * <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/singleton-pattern.html">http://www.oodesign.com/singleton-pattern.html</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface SingletonPattern
-{
-
-}
+public @interface SingletonPattern { }

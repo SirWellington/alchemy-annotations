@@ -23,21 +23,17 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Declares the use of the Strategy Pattern, explained
  * <a href="http://www.oodesign.com/strategy-pattern.html">here</a>.
  *
- * @see
- * <a href="http://www.oodesign.com/strategy-pattern.html">http://www.oodesign.com/strategy-pattern.html</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/strategy-pattern.html">http://www.oodesign.com/strategy-pattern.html</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, FIELD, METHOD})
-public @interface StrategyPattern
-{
+public @interface StrategyPattern {
 
     Role role();
 
-    public static enum Role
-    {
+    public static enum Role {
 
         /**
          * Applied to the Interface definition of the Behavior.
