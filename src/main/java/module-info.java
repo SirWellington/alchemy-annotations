@@ -1,6 +1,6 @@
 module tech.sirwellington.alchemy.annotations {
     requires java.base;
-    
+
     exports tech.sirwellington.alchemy.annotations.access;
     exports tech.sirwellington.alchemy.annotations.arguments;
     exports tech.sirwellington.alchemy.annotations.concurrency;
