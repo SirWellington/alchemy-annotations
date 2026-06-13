@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -21,8 +21,6 @@ import java.lang.annotation.*;
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
-
-
 /**
  * Makes an explicit distinction for a test as being an Integration Test, and not a Unit Test.
  *
@@ -30,8 +28,5 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, METHOD })
-public @interface IntegrationTest
-{
-
-}
+@Target({TYPE, FIELD, METHOD})
+public @interface IntegrationTest { }

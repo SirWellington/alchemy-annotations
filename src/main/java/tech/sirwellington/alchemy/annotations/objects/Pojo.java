@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -22,7 +22,6 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
 
-
 /**
  * Declares a Class or Object that is designed to only contain data.
  * <p>
@@ -34,7 +33,4 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface Pojo
-{
-
-}
+public @interface Pojo { }

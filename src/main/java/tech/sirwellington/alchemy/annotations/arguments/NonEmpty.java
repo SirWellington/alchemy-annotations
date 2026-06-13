@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -39,7 +39,4 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Retention(RUNTIME)
 @Target({ PARAMETER, FIELD, LOCAL_VARIABLE })
-public @interface NonEmpty
-{
-
-}
+public @interface NonEmpty { }

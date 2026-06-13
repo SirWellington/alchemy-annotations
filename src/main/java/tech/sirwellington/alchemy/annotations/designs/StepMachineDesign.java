@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -30,14 +30,11 @@ import static tech.sirwellington.alchemy.annotations.designs.StepMachineDesign.R
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface StepMachineDesign
-{
+public @interface StepMachineDesign {
 
     Role role() default NONE_SPECIFIED;
 
-    public static enum Role
-    {
-
+    public static enum Role {
         MACHINE,
         STEP,
         CLIENT,

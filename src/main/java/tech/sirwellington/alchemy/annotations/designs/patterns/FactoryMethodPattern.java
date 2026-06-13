@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -23,21 +23,17 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Declares the use of the Factory Method.
  * This pattern is described <a href="http://www.oodesign.com/factory-method-pattern.html">here</a>.
  *
- * @see
- * <a href="http://www.oodesign.com/factory-method-pattern.html">http://www.oodesign.com/factory-method-pattern.html</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/factory-method-pattern.html">http://www.oodesign.com/factory-method-pattern.html</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface FactoryMethodPattern
-{
+public @interface FactoryMethodPattern {
 
     Role role();
 
-    public static enum Role
-    {
+    public static enum Role {
 
         /**
          * Applied to the Interface of the Product, i.e. the Abstract Product.

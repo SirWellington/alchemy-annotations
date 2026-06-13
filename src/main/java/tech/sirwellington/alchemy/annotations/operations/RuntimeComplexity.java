@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -27,33 +27,45 @@ import static java.lang.annotation.ElementType.*;
  */
 @Documented
 @Retention(RetentionPolicy.CLASS)
-@Target({ TYPE, FIELD, METHOD })
-public @interface RuntimeComplexity
-{
+@Target({TYPE, FIELD, METHOD})
+public @interface RuntimeComplexity {
 
     Complexity value();
 
-    enum Complexity
-    {
-        /** O(1) complexity */
+    enum Complexity {
+        /**
+         * O(1) complexity
+         */
         CONSTANT,
 
-        /** O(ln(n))  complexity */
+        /**
+         * O(ln(n))  complexity
+         */
         LOGARITHMIC,
 
-        /** O(n) complexity */
+        /**
+         * O(n) complexity
+         */
         LINEAR,
 
-        /** O(n²) complexity */
+        /**
+         * O(n²) complexity
+         */
         QUADRATIC,
 
-        /** O(n³) complexity */
+        /**
+         * O(n³) complexity
+         */
         CUBIC,
 
-        /** O(2ⁿ) complexity */
+        /**
+         * O(2ⁿ) complexity
+         */
         EXPONENTIAL,
 
-        /** O(n!) complexity */
+        /**
+         * O(n!) complexity
+         */
         FACTORIAL
     }
 }

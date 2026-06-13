@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -30,12 +30,10 @@ import static java.lang.annotation.ElementType.*;
 @Documented
 @Retention(RetentionPolicy.CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface FacadePattern
-{
+public @interface FacadePattern {
     Role role() default Role.UMBRELLA;
 
-    public static enum Role
-    {
+    public static enum Role {
         /**
          * Represents one of the individual pieces that comprise
          * the whole.

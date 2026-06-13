@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -24,23 +24,18 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Declares use of the Decorator Pattern, explained
  * <a href="http://www.oodesign.com/decorator-pattern.html">here</a>.
  *
- * @see
- * <a href="http://www.oodesign.com/decorator-pattern.html">http://www.oodesign.com/decorator-pattern.html</a>
- * @see
- * <a href="https://sourcemaking.com/design_patterns/decorator">https://sourcemaking.com/design_patterns/decorator</a>
- *
  * @author SirWellington
+ * @see <a href="http://www.oodesign.com/decorator-pattern.html">http://www.oodesign.com/decorator-pattern.html</a>
+ * @see <a href="https://sourcemaking.com/design_patterns/decorator">https://sourcemaking.com/design_patterns/decorator</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD, PARAMETER, CONSTRUCTOR})
-public @interface DecoratorPattern
-{
+public @interface DecoratorPattern {
 
     Role role();
 
-    public static enum Role
-    {
+    public static enum Role {
 
         /**
          * Applied to the Interface of the component. This is the base Decorators also implement

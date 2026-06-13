@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -23,15 +23,11 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Marks an argument or field as something that <b>should not be {@code null}</b>.
  *
+ * @author SirWellington
  * @see Optional
  * @see NonEmpty
- *
- * @author SirWellington
  */
 @Documented
 @Retention(RUNTIME)
 @Target({PARAMETER, FIELD, LOCAL_VARIABLE, METHOD})
-public @interface Required
-{
-
-}
+public @interface Required { }

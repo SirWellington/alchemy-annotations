@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -27,14 +27,10 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * + Marks a variable to indicate that it <b>should be mutable</b>. In other words, its underlying can
  * still be changed once set.
  *
- * @see Immutable
- *
  * @author SirWellington
+ * @see Immutable
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
-public @interface Mutable
-{
-
-}
+@Target({TYPE, FIELD, LOCAL_VARIABLE, METHOD})
+public @interface Mutable { }

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -24,19 +24,15 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * <p>
  * + Marks a variable to indicate that it is expected to be Thread-Safe.
  * <p><p>
- *
+ * <p>
  * Thread Safety means that no special precautions must be taken to handle concurrency issues for clients
  * using this object. Thread-Safe Objects are usually immutable or handle synchronization internally.
  *
+ * @author SirWellington
  * @see ThreadUnsafe
  * @see Immutable
- *
- * @author SirWellington
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD })
-public @interface ThreadSafe
-{
-
-}
+@Target({TYPE, FIELD, CONSTRUCTOR, LOCAL_VARIABLE, METHOD})
+public @interface ThreadSafe { }

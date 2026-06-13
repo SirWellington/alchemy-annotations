@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -27,14 +27,10 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * <p><p>
  * Once it is created and set, it's underlying state <b>should not</b> be changed.
  *
- * @see Mutable
- *
  * @author SirWellington
+ * @see Mutable
  */
 @Documented
 @Retention(CLASS)
-@Target({ TYPE, FIELD, LOCAL_VARIABLE, METHOD })
-public @interface Immutable
-{
-
-}
+@Target({TYPE, FIELD, LOCAL_VARIABLE, METHOD})
+public @interface Immutable { }

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2025. Sir Wellington.
+ * Copyright © 2026. Sir Wellington.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  *
@@ -23,14 +23,10 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Used to document the application or use of the Fluid API Style, explained
  * <a href="https://en.wikipedia.org/wiki/Fluent_interface">here</a>.
  *
- * @see
- * <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
  * @author SirWellington
+ * @see <a href="https://en.wikipedia.org/wiki/Fluent_interface">https://en.wikipedia.org/wiki/Fluent_interface</a>
  */
 @Documented
 @Retention(CLASS)
 @Target({TYPE, METHOD, FIELD})
-public @interface FluidAPIDesign
-{
-
-}
+public @interface FluidAPIDesign { }
