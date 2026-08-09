@@ -74,8 +74,7 @@ Labels describing expectations about access to code or data.
 
 ```java
 @Internal
-public class MapOperations
-{
+public class MapOperations {
 	public Map findIntersection(Map first, map second) { }
 }
 ```
@@ -83,8 +82,7 @@ public class MapOperations
 #### @NonInstantiable
 ```java
 @NonInstantiable
-public final class Strings
-{
+public final class Strings {
 	private Strings() { throw new IllegalAccessException(); }
 
 	public static String toJson(String string) { }
@@ -104,12 +102,10 @@ Documentation for arguments or fields.
 
 #### @NonEmpty
 ```java
-class MyService
-{
+class MyService {
 	private final String name;
 
-	MyService(@NonEmpty String serviceName)
-	{
+	MyService(@NonEmpty String serviceName) 	{
 		Arguments.checkThat(serviceName)
 				 .is(nonEmptyString());
 		this.name = serviceName;
@@ -120,14 +116,13 @@ class MyService
 #### @Optional
 ```java
 
-public Pizza create(Bread bread, @Optional List<Condiments> condiments)
-{
-	Pizza pizza = createPizza(bread);
+public Pizza create(Bread bread, @Optional List<Condiments> condiments) {
+	var pizza = createPizza(bread);
 
-	if (Lists.notEmpty(condiments))
-	{
+	if (Lists.notEmpty(condiments)) {
 		pizza.addCondiments(condiments);
 	}
+    return pizza;
 }
 
 ```
@@ -144,10 +139,8 @@ Documentation for Concurrency concerns and concepts.
 
 ```java
 @ThreadSafe
-class PizzaFactory
-{
-	Pizza makePizza()
-	{
+class PizzaFactory {
+	Pizza makePizza() {
 		return new Pizza("Tasty!");
 	}
 }
@@ -157,14 +150,11 @@ class PizzaFactory
 
 ```java
 @ThreadUnsafe
-class PizzaStore
-{
+class PizzaStore {
 	private PizzaFactory factory;
 
 	...
-
-	void serveCustomer()
-	{
+	void serveCustomer() {
 		factory.makePizza();
 		//...
 	}
@@ -174,8 +164,7 @@ class PizzaStore
 
 ```java
 @Mutable
-class Store
-{
+class Store {
 	@Mutable
 	private List<Customer> customers;
 }
@@ -184,8 +173,7 @@ class Store
 ### @Immutable
 
 ```java
-class Store
-{
+class Store {
 	private List<Customer> customers;
 
 	@Immutable
@@ -212,17 +200,14 @@ Documents the Application or Use of Design Patterns. This allows others to know 
 
 ```java
 @ObserverPattern(role = SUBJECT)
-class Apple
-{
+class Apple {
 ...
 }
 
 @ObserverPattern(role = OBSERVER)
-class AppleFanboy implements AppleWatcher
-{
+class AppleFanboy implements AppleWatcher {
 
-	void onNewRelease(PressRelease info)
-	{
+	void onNewRelease(PressRelease info) {
 		print("WooHoo!");
 	}
 }
