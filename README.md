@@ -5,7 +5,7 @@ Alchemy Annotations
 
 ## "Write what you mean, mean what you write."
 
-[![Build Status](http://jenkins.redroma.tech/job/Alchemy%20Annotations/badge/icon)](http://jenkins.redroma.tech/job/Alchemy%20Annotations/)
+![Maven Build](https://github.com/SirWellington/alchemy-annotations/actions/workflows/maven-build.yml/badge.svg)
 ![Maven Central Version](http://img.shields.io/maven-central/v/tech.sirwellington.alchemy/alchemy-annotations.svg)
 
 # Purpose
